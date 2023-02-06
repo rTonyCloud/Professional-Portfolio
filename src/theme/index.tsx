@@ -14,7 +14,7 @@ export const lightTheme = {
     background: '#999',
   }
 
-export const GlobalStyle = createGlobalStyle`
+export const theme = createGlobalStyle`
     body {
         
     }
