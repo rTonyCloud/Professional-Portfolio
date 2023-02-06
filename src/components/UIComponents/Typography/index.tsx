@@ -9,10 +9,6 @@ type Variant =
     | 'h6'
     | 'body1'
     | 'body2'
-    | 'body3'
-    | 'cta1'
-    | 'cta2'
-    | 'nav1'
 
 interface Props {
     children: React.ReactNode
