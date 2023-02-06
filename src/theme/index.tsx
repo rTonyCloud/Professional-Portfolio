@@ -5,17 +5,27 @@ export const lightTheme = {
     text: '#363537',
     toggleBorder: '#FFF',
     background: '#363537',
-  }
-  
-  export const darkTheme = {
+}
+
+export const darkTheme = {
     body: '#363537',
     text: '#FAFAFA',
     toggleBorder: '#6B8096',
     background: '#999',
-  }
+}
 
 export const theme = createGlobalStyle`
+
+    :root {
+      max-width: 1250px;
+      border-radius: 12px;
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('/fonts/*') format('truetype');
+        }
+    }
+
     body {
-        
+      max-width: 100vw;
     }
 `
