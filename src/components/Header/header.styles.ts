@@ -30,7 +30,13 @@ export const navContent = styled.div`
 
 `
 
+export const mediaItems = styled.div`
+    display: flex;
+`;
+
 export const logoWrapper = styled.div`
     display: flex;
     flex-direction: row;
+    position: relative;
+    bottom: 30px;
 `

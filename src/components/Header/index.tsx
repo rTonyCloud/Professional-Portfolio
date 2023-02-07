@@ -3,12 +3,14 @@ import Image from 'next/image'
 import * as styles from './header.styles.ts'
 import { Button } from '../UIComponents/index.ts'
 
-const navItems = ['About', 'Skills', 'Projects', 'Linkedin', 'Github']
+const navItems = ['About', 'Skills', 'Projects']
+const mediaItems = ['Github', 'LinkedIn']
 
 const headerText = ['Download Resume']
 
 const buttonStyles = {
     display: 'flex',
+    padding: '15px 30px',
 }
 
 const Header: React.FC = (): JSX.Element => {
@@ -18,6 +20,9 @@ const Header: React.FC = (): JSX.Element => {
                 {navItems.map((navItem, index) => (
                     <styles.navContent key={index}>{navItem}</styles.navContent>
                 ))}
+                {mediaItems.map((mediaItem, index) => (
+                        <styles.mediaItems key={index}>{mediaItem}</styles.mediaItems>
+                    ))}
                 <Button variant="blue" sx={buttonStyles}>
                     <Image src={heartIcon} alt="hello" width="20" />
                     {headerText}
