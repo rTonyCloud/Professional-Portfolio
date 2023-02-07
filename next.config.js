@@ -4,6 +4,7 @@ const nextConfig = {
         //enables swc for style components
         styledComponents: true,
     },
+    allowimportingTsExtension: true,
     reactStrictMode: true,
 }
 

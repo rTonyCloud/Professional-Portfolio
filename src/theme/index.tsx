@@ -16,16 +16,4 @@ export const darkTheme = {
 
 export const theme = createGlobalStyle`
 
-    :root {
-      max-width: 1250px;
-      border-radius: 12px;
-        @font-face {
-            font-family: 'Montserrat';
-            src: url('/fonts/*') format('truetype');
-        }
-    }
-
-    body {
-      max-width: 100vw;
-    }
 `

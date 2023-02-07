@@ -2,7 +2,7 @@ import blockchainIcon from './blockchainIcon.svg';
 import bracketCodeIcon from './bracketCodeIcon.svg';
 import closeCodeIcon from './closeCodeIcon.svg';
 import cssIcon from './cssIcon.svg';
-import dancingManIcon from 'dancingManIcon.svg';
+// import dancingManIcon from 'dancingManIcon.svg';
 import darkCircleIcon from './darkCircleIcon.svg';
 import fiveStarIcons from './fiveStarIcons.svg';
 import footerGithubIcon from './footerGithubIcon.svg';
@@ -28,7 +28,7 @@ export {
     bracketCodeIcon,
     closeCodeIcon,
     cssIcon,
-    dancingManIcon,
+    // dancingManIcon,
     darkCircleIcon,
     fiveStarIcons,
     footerGithubIcon,

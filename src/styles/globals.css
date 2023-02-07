@@ -1,6 +1,5 @@
 :root {
-    --max-width: 1250px;
-    --border-radius: 12px;
+    min-width: 1250px;
 
     @font-face {
         font-family: 'Montserrat';
@@ -8,36 +7,22 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        @font-face {
-            font-family: 'Montserrat';
-            src: url('/fonts/*') format('truetype');
-        }
-    }
+* {
+    margin: 0;
+    padding: 0;
 }
 
 html,
 body {
-    max-width: 100vw;
-}
-
-body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-            to bottom,
-            transparent,
-            rgb(var(--background-end-rgb))
-        )
-        rgb(var(--background-start-rgb));
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
     text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-    html {
-        color-scheme: dark;
-    }
+@media screen and (max-width: 2500px) {
+    
 }
