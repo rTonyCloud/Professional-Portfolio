@@ -1,4 +1,5 @@
 import Button from './Buttons'
 import Typography from './Typography'
+import IconCardLayout from '../Footer/'
 
-export { Button, Typography }
+export { Button, Typography, IconCardLayout }
