@@ -1,4 +1,8 @@
-:root {
+html,
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background: linear-gradient(
         130.36deg,
         #000000 0%,
@@ -6,28 +10,27 @@
         #494949 99.99%,
         #727272 100%
     );
-
-    @font-face {
-        font-family: 'Montserrat';
-        src: url('/fonts/*') format('truetype');
-    }
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-
-html,
-body {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    font-family: 'Montserrat', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+html ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
 a {
     text-decoration: none;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/public/fonts/Montserrat/*') format('truetype');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('/public/fonts/Roboto/*') format('truetype');
+}
+
 @media screen and (max-width: 2500px) {
-    
 }

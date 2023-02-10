@@ -6,6 +6,7 @@ const Aboutme = '< About me />'
 const AboutMeBlock: React.FC = (): JSX.Element => {
     return (
         <styles.Container>
+            <styles.AboutText>
             <Typography variant='h1' sx={{ color: 'white' }}>{Aboutme}</Typography>
             <Typography variant='body1' sx={{color: 'white'}}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.< br />
@@ -15,6 +16,7 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
             nisl, sit amet aliquet nisl. Sed euismod, nisl sit amet dgsyr < br />
             aliquam, nisl nisl aliquam nisl, sit amet aliquet nisl. Sed < br />
             </Typography>
+            </styles.AboutText>
         </styles.Container>
     )
 }

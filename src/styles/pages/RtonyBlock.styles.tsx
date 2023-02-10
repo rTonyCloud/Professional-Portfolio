@@ -59,8 +59,41 @@ export const ProfileWrapper = styled.div`
     top: -200px;
 `
 
+export const ProfileCircle = styled.div`
+    display: flex;
+    position: absolute;
+`
+
 export const ProfileImage = styled.div`
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+`
+
+export const ProfileIcons = styled.div`
+    display: flex;
+    position: relative;
+`
+
+export const NodejsIcon = styled.div`
+    display: flex;
+    position: absolute;
+    top: 350px;
+    right: 400px;
+`
+
+export const ReactIcon = styled.div`
+    display: flex;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+
+`
+
+export const TypescriptIcon = styled.div`
+    display: flex;
+    position: absolute;
+    top: 350px;
+    right: 100px;
 `

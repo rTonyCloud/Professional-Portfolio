@@ -21,6 +21,9 @@ import reduxIcon from './reduxIcon.svg';
 import rightArrowIcon from './rightArrowIcon.svg';
 import typescriptIcon from './typescriptIcon.svg';
 import rtonycloudLogo from './rtonycloudLogo.svg';
+import nodejsProfileIcon from './nodejsProfileIcon.svg';
+import reactProfileIcon from './reactProfileIcon.svg';
+import typescriptProfileIcon from './typescriptProfileIcon.svg';
 
 
 export {
@@ -47,4 +50,7 @@ export {
     rightArrowIcon,
     typescriptIcon,
     rtonycloudLogo,
+    nodejsProfileIcon,
+    reactProfileIcon,
+    typescriptProfileIcon
 }
