@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const footerContainer = styled.div`
-    width: 100vw;
+    width: 100%;
     min-width: 1250px;
     height: 250px;
     bottom: 0;
-    position: absolute;
-    background: linear-gradient(130.36deg, #000000 0%, #272727 44.03%, #494949 99.99%, #727272 100%);
+    position: relative;
+    background: #161616;
 `
 
 export const line = styled.hr`
