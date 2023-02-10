@@ -7,16 +7,17 @@ export const footerContainer = styled.div`
     bottom: 0;
     position: relative;
     background: #161616;
+    display: flex;
+    flex-direction: column;
 `
 
 export const line = styled.hr`
     position: absolute;
     width: 50%;
-    left: 25%;
+    left: 25vw;
     top: 10px;
-    background: #8383831A;
+    background: #8383831a;
     border: 5px solid rgba(131, 131, 131, 0.1);
-    position: relative;
 `
 
 export const footerContent = styled.a`
@@ -25,8 +26,7 @@ export const footerContent = styled.a`
     position: relative;
     top: 50px;
     gap: 50px;
-`;
-
+`
 
 export const footerCopyRight = styled.div`
     display: flex;

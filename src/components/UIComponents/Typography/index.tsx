@@ -25,8 +25,9 @@ const Typography: React.FC<Props> = (props: Props): JSX.Element => {
                 <h1
                     style={{
                         fontFamily: 'Montserrat',
-                        fontSize: '20px',
+                        fontSize: '78px',
                         fontWeight: 500,
+                        color: 'white',
                         ...sx,
                     }}
                 >
@@ -38,8 +39,9 @@ const Typography: React.FC<Props> = (props: Props): JSX.Element => {
                 <h2
                     style={{
                         fontFamily: 'Montserrat',
-                        fontSize: '48px',
+                        fontSize: '57px',
                         fontWeight: 500,
+                        color: 'white',
                         ...sx,
                     }}
                 >
@@ -51,8 +53,9 @@ const Typography: React.FC<Props> = (props: Props): JSX.Element => {
                 <h3
                     style={{
                         fontFamily: 'Montserrat',
-                        fontSize: '36px',
+                        fontSize: '47px',
                         fontWeight: 500,
+                        color: 'white',
                         ...sx,
                     }}
                 >
@@ -64,8 +67,9 @@ const Typography: React.FC<Props> = (props: Props): JSX.Element => {
                 <h4
                     style={{
                         fontFamily: 'Montserrat',
-                        fontSize: '32px',
+                        fontSize: '39px',
                         fontWeight: 500,
+                        color: 'white',
                         ...sx,
                     }}
                 >
@@ -79,6 +83,7 @@ const Typography: React.FC<Props> = (props: Props): JSX.Element => {
                         fontFamily: 'Montserrat',
                         fontSize: '28px',
                         fontWeight: 500,
+                        color: 'white',
                         ...sx,
                     }}
                 >
@@ -92,6 +97,7 @@ const Typography: React.FC<Props> = (props: Props): JSX.Element => {
                         fontFamily: 'Montserrat',
                         fontSize: '24px',
                         fontWeight: 500,
+                        color: 'white',
                         ...sx,
                     }}
                 >
@@ -103,8 +109,9 @@ const Typography: React.FC<Props> = (props: Props): JSX.Element => {
                 <p
                     style={{
                         fontFamily: 'Montserrat',
-                        fontSize: '16px',
+                        fontSize: '20px',
                         fontWeight: 400,
+                        color: 'white',
                         ...sx,
                     }}
                 >
