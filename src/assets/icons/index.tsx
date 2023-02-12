@@ -2,7 +2,7 @@ import blockchainIcon from './blockchainIcon.svg';
 import bracketCodeIcon from './bracketCodeIcon.svg';
 import closeCodeIcon from './closeCodeIcon.svg';
 import cssIcon from './cssIcon.svg';
-// import dancingManIcon from 'dancingManIcon.svg';
+import dancingManIcon from './dancingManIcon.svg';
 import darkCircleIcon from './darkCircleIcon.svg';
 import fiveStarIcons from './fiveStarIcons.svg';
 import footerGithubIcon from './footerGithubIcon.svg';
@@ -24,14 +24,15 @@ import rtonycloudLogo from './rtonycloudLogo.svg';
 import nodejsProfileIcon from './nodejsProfileIcon.svg';
 import reactProfileIcon from './reactProfileIcon.svg';
 import typescriptProfileIcon from './typescriptProfileIcon.svg';
-
+import ethereumIcon from './ethereumIcon.svg';
+import stars from './stars.svg';
 
 export {
     blockchainIcon,
     bracketCodeIcon,
     closeCodeIcon,
     cssIcon,
-    // dancingManIcon,
+    dancingManIcon,
     darkCircleIcon,
     fiveStarIcons,
     footerGithubIcon,
@@ -52,5 +53,7 @@ export {
     rtonycloudLogo,
     nodejsProfileIcon,
     reactProfileIcon,
-    typescriptProfileIcon
+    typescriptProfileIcon,
+    ethereumIcon,
+    stars
 }

@@ -1,22 +1,5 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-    width: 100%;
-    min-width: 1250px;
-    height: 50vh;
-`
-
-export const AboutText = styled.div`
-    display: flex;
-    color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    right: 450px;
-`
-
-
 export const Card = styled.div`
     display: flex;
     justify-content: flex-end;
@@ -25,6 +8,7 @@ export const Card = styled.div`
     border-radius: 6px;
     bottom: 300px;
     margin: 0 auto;
+    
 `
 
 export const CardWrapper = styled.div`
@@ -36,6 +20,7 @@ export const CardWrapper = styled.div`
     justify-content: center;
     position: relative;
     left: 75px;
+    cursor: pointer;
     `
 
 export const CardText = styled.div`

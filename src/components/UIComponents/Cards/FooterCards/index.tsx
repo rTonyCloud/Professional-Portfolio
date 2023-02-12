@@ -1,10 +1,9 @@
 import { Typography } from '../..'
-import * as styles from './FooterCard.styles'
+import * as styles from './FooterCards.styles'
 
-interface props {
+interface FooterCardsProps {
     image: React.ReactNode
     title: string
-    href?: string
 }
 
 const style = {
@@ -12,8 +11,8 @@ const style = {
     marginTop: '20px',
 }
 
-const IconCardLayout: React.FC<props> = (props: props): JSX.Element => {
-    const { image, title, href } = props
+const IconCardLayout: React.FC<FooterCardsProps> = (props: FooterCardsProps): JSX.Element => {
+    const { image, title } = props
 
     return (
         <styles.Card>
@@ -21,7 +20,7 @@ const IconCardLayout: React.FC<props> = (props: props): JSX.Element => {
             <styles.Wrapper>
                 <styles.Title>
                     <Typography variant="body1">
-                        {href && title}
+                        {title}
                     </Typography>
                 </styles.Title>
             </styles.Wrapper>
