@@ -1,9 +1,15 @@
+import Image, { StaticImageData } from 'next/image'
 import { Typography } from '../..'
 import * as styles from './FooterCards.styles'
 
 interface FooterCardsProps {
-    image: React.ReactNode
+    image: StaticImageData | string
+    width: number
+    height: number
+    alt: string
     title: string
+    onClick?: () => void
+    href?: string
 }
 
 const style = {
@@ -12,16 +18,16 @@ const style = {
 }
 
 const IconCardLayout: React.FC<FooterCardsProps> = (props: FooterCardsProps): JSX.Element => {
-    const { image, title } = props
+    const { image, height, width, alt, title } = props
 
     return (
         <styles.Card>
-            <styles.Image>{image}</styles.Image>
+            <styles.Image>
+                <Image src={image} width={width} height={height} alt={alt} />
+            </styles.Image>
             <styles.Wrapper>
                 <styles.Title>
-                    <Typography variant="body1">
-                        {title}
-                    </Typography>
+                    <Typography variant="body1">{title}</Typography>
                 </styles.Title>
             </styles.Wrapper>
         </styles.Card>

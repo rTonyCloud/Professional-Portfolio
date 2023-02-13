@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-
+import styled from 'styled-components'
 
 export const Card = styled.div`
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 `
 
 export const Title = styled.div`

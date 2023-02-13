@@ -4,7 +4,8 @@ export const LineContainer = styled.div`
     position: relative;
     display: flex;
     align-items: center;
-    height: 600px;
+    height: 80vh;
+    width: 5vw;
     border: 20px solid red;
   `
   
@@ -32,7 +33,7 @@ export const Line = styled.div `
     `
 
     export const Wrapper = styled.div`
-        gap: 100px;
+        gap: 150px;
         display: flex;
         top: 0;
         bottom: 0;

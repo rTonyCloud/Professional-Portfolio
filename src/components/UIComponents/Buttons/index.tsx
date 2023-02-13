@@ -1,6 +1,6 @@
 import React from 'react'
 
-interface Props {
+export interface ButtonProps {
     children: React.ReactNode
     variant?: 'blue' | 'gray' | 'white'
     disabled?: boolean
@@ -9,7 +9,7 @@ interface Props {
     onClick?: () => void
 }
 
-const Button: React.FC<Props> = (props: Props): JSX.Element => {
+const Button: React.FC<ButtonProps> = (props: ButtonProps): JSX.Element => {
     const { children, variant, sx, onClick, disabled, type } = props
 
     const returnButtonBg = (): string => {

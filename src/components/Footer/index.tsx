@@ -1,9 +1,11 @@
 import * as styles from './footer.styles'
 
 //texts
-import { footerLinks, footerCopyRight } from '@/utils/texts/footer.text'
+import {
+    footerLinks,
+    footerCopyRight,
+} from '@/utils/portfolioTexts/footer.text'
 import IconCardLayout from '@/components/UIComponents/Cards/FooterCards'
-
 
 const Footer: React.FC = (): JSX.Element => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 
-type Variant =
+export type Variant =
     | 'h1'
     | 'h2'
     | 'h3'
@@ -17,7 +17,7 @@ interface Props {
 }
 
 const Typography: React.FC<Props> = (props: Props): JSX.Element => {
-    const { children, variant, sx } = props
+    const { children, variant, sx, } = props
 
     switch (variant) {
         case 'h1':

@@ -1,17 +1,22 @@
+import Image, { StaticImageData } from 'next/image'
 import { Typography } from '../..'
+import { Variant } from '../../Typography'
 import * as styles from './AboutMeCards.styles'
 
 interface AboutMeProps {
     title: string
     link: string
-    image: React.ReactNode
+    image: StaticImageData
+    width?: number | undefined
+    height?: number | undefined
+    alt: string
+    variant?: Variant | undefined
 }
 
 const AboutMeCard: React.FC<AboutMeProps> = (
     props: AboutMeProps
 ): JSX.Element => {
-    const { title, link, image } = props
-
+    const { title, link, image, width, height, alt, variant } = props
     return (
         <styles.Card>
             <styles.CardWrapper>
@@ -29,10 +34,16 @@ const AboutMeCard: React.FC<AboutMeProps> = (
                         {link}
                     </Typography>
                 </styles.CardText>
-                <styles.CardImage>{image}</styles.CardImage>
+                <styles.CardImage>
+                    <Image
+                        src={image}
+                        width={width}
+                        height={height}
+                        alt={alt}
+                    />
+                </styles.CardImage>
             </styles.CardWrapper>
         </styles.Card>
     )
 }
-
 export default AboutMeCard
