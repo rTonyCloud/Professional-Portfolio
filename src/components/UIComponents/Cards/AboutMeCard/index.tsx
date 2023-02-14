@@ -11,26 +11,21 @@ interface AboutMeProps {
     height?: number | undefined
     alt: string
     variant?: Variant | undefined
+    sx?: React.CSSProperties | undefined
 }
 
 const AboutMeCard: React.FC<AboutMeProps> = (
     props: AboutMeProps
 ): JSX.Element => {
-    const { title, link, image, width, height, alt, variant } = props
+    const { title, link, image, width, height, alt, variant, sx } = props
     return (
         <styles.Card>
             <styles.CardWrapper>
                 <styles.CardText>
-                    <Typography
-                        variant="h5"
-                        sx={{ color: 'white', marginTop: '10px' }}
-                    >
+                    <Typography variant={variant} sx={sx}>
                         {title}
                     </Typography>
-                    <Typography
-                        variant="h5"
-                        sx={{ color: 'white', marginTop: '-10px' }}
-                    >
+                    <Typography variant={variant} sx={sx}>
                         {link}
                     </Typography>
                 </styles.CardText>

@@ -6,7 +6,8 @@ interface EduCardsProps {
     image: StaticImageData
     width: number
     height: number
-    alt: string
+    imgAlt: string
+    logoAlt: string
     title: string
     company: string
     issueDate: string
@@ -14,15 +15,16 @@ interface EduCardsProps {
     logo: StaticImageData
     onClick?: () => void
     buttonText: string
-    sx?: React.CSSProperties
-    variant?: Variant 
+    sx?: React.CSSProperties | undefined
+    variant?: Variant | undefined
 }
 
 const EduCards: React.FC<EduCardsProps> = (
     props: EduCardsProps
 ): JSX.Element => {
     const {
-        alt,
+        imgAlt,
+        logoAlt,
         image,
         height,
         width,
@@ -39,19 +41,30 @@ const EduCards: React.FC<EduCardsProps> = (
     return (
         <styles.Card>
             <styles.CardImage>
-                <Image src={image} width={width} height={height} alt={alt} />
+                <Image src={image} width={width} height={height} alt={imgAlt} />
             </styles.CardImage>
             <styles.CardBody>
-                <Typography variant={variant} sx={sx}>{title}</Typography>
-                <styles.CardBodyRightWrapper>
-                    <Image src={logo} width={width} height={height} alt={alt} />
-                    <Typography variant={variant}>{company}</Typography>
-                    <Typography variant={variant}>{issueDate}</Typography>
-                    <Typography variant={variant}>{credentialId}</Typography>
-                </styles.CardBodyRightWrapper>
-                <styles.Button onClick={onClick}>
-                    <Typography variant={variant}>{buttonText}</Typography>
-                </styles.Button>
+                <Typography variant={variant} sx={sx}>
+                    {title}
+                </Typography>
+                <styles.CardBodyBottomWrapper>
+                    <styles.CardBodyRightWrapper>
+                        <Image
+                            src={logo}
+                            width={width}
+                            height={height}
+                            alt={logoAlt}
+                        />
+                        <Typography variant={variant}>{company}</Typography>
+                        <Typography variant={variant}>{issueDate}</Typography>
+                        <Typography variant={variant}>
+                            {credentialId}
+                        </Typography>
+                    </styles.CardBodyRightWrapper>
+                    <styles.Button onClick={onClick}>
+                        <Typography variant={variant}>{buttonText}</Typography>
+                    </styles.Button>
+                </styles.CardBodyBottomWrapper>
             </styles.CardBody>
         </styles.Card>
     )

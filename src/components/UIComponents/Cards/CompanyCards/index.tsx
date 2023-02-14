@@ -21,9 +21,17 @@ const buttonName = 'Visit Website'
 const CompanyCards: React.FC<CompanyCardsProps> = (
     props: CompanyCardsProps
 ): JSX.Element => {
-    const { companyLogo, company, description, height, width, alt, onClick } =
-        props
-
+    const {
+        companyLogo,
+        company,
+        description,
+        height,
+        width,
+        alt,
+        onClick,
+        variant,
+        variantButton,
+    } = props
     return (
         <styles.Card>
             <styles.Wrapper>
@@ -36,13 +44,13 @@ const CompanyCards: React.FC<CompanyCardsProps> = (
                     />
                 </styles.Image>
                 <styles.Title>
-                    <Typography variant="h5">{company}</Typography>
+                    <Typography variant={variant}>{company}</Typography>
                 </styles.Title>
                 <styles.Description>
-                    <Typography variant="body1">{description}</Typography>
+                    <Typography variant={variant}>{description}</Typography>
                 </styles.Description>
                 <styles.Button>
-                    <Button variant="blue" onClick={onClick}>
+                    <Button variant={variantButton} onClick={onClick}>
                         {buttonName}
                     </Button>
                 </styles.Button>
@@ -50,5 +58,4 @@ const CompanyCards: React.FC<CompanyCardsProps> = (
         </styles.Card>
     )
 }
-
 export default CompanyCards

@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Section = styled.div`
     width: 100%;
     min-width: 1250px;
     height: 650px;
 `
-
-export const FirstSection = styled.div`
-    color: white;
+export const Container = styled.div`
+color: white;
 `

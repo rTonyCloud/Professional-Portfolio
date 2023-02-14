@@ -26,6 +26,7 @@ import reactProfileIcon from './reactProfileIcon.svg';
 import typescriptProfileIcon from './typescriptProfileIcon.svg';
 import ethereumIcon from './ethereumIcon.svg';
 import stars from './stars.svg';
+import blockLogo from './blockLogo.svg';
 
 export {
     blockchainIcon,
@@ -55,5 +56,6 @@ export {
     reactProfileIcon,
     typescriptProfileIcon,
     ethereumIcon,
-    stars
+    stars,
+    blockLogo,
 }

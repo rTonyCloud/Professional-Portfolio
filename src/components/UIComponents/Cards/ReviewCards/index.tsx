@@ -1,5 +1,5 @@
 import * as styles from './ReviewCards.styles'
-import Typography from '../../Typography'
+import Typography, { Variant } from '../../Typography'
 import Image, { StaticImageData } from 'next/image'
 import { stars } from '@/assets/icons'
 
@@ -11,25 +11,26 @@ interface ReviewCardsProps {
     width: number
     height: number
     alt: string
+    variant?: Variant | undefined
 }
 
 const ReviewCard: React.FC<ReviewCardsProps> = (
     props: ReviewCardsProps
 ): JSX.Element => {
-    const { image, name, company, description, width, height, alt } = props
+    const { image, name, company, description, width, height, alt, variant } = props
 
     return (
         <styles.Container>
             <styles.Wrapper>
                 <Image src={image} alt={alt} height={height} width={width} />
                 <styles.Title>
-                    <Typography variant='body1'>{name}</Typography>
+                    <Typography variant={variant}>{name}</Typography>
                 </styles.Title>
                 <styles.Company>
-                    <Typography variant="body2">{company}</Typography>
+                    <Typography variant={variant}>{company}</Typography>
                 </styles.Company>
                 <styles.Description>
-                    <Typography variant="body2">{description}</Typography>
+                    <Typography variant={variant}>{description}</Typography>
                 </styles.Description>
                 <styles.Stars>
                     {Array.from({ length: 5 }).map((_, i) => (

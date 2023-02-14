@@ -1,17 +1,29 @@
+import { Project1 } from '@/assets/images'
 import { Typography } from '@/components/UIComponents'
+import { ProjectCards } from '@/components/UIComponents/index'
 import * as styles from '@/styles/pages/MyProjectsBlock.styles'
 
 const projectHeader = '< My Projects />'
 
-
 const MyProjectsBlock: React.FC = (): JSX.Element => {
     return (
-        <styles.Container>
-            <Typography variant='h1' sx={{ color: 'white' }}>{projectHeader}</Typography>
-        </styles.Container>
+        <styles.Section>
+            <Typography variant="h1" sx={{ color: 'white' }}>
+                {projectHeader}
+            </Typography>
+            <styles.Container>
+                <ProjectCards
+                    src={Project1}
+                    title="Project 1"
+                    width={0}
+                    height={349}
+                    alt="Project-1"
+                    sx={{ color: 'white' }}
+                    variant="h5"
+                />
+            </styles.Container>
+        </styles.Section>
     )
 }
-
-
 
 export default MyProjectsBlock
