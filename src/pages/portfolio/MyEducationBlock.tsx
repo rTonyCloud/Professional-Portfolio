@@ -2,14 +2,22 @@ import { EduCards, Typography } from '@/components/UIComponents'
 import * as styles from '@/styles/pages/MyEducationBlock.styles'
 import { cardLogo } from '@/assets/images'
 import { blockLogo } from '@/assets/icons'
+import Toggle from '@/components/UIComponents/Toggle'
 const eduHeader = '< My Education />'
 
 const MyEducationBlock: React.FC = (): JSX.Element => {
     return (
         <styles.Section>
+            <styles.Header>
             <Typography variant="h1" sx={{ color: 'white' }}>
                 {eduHeader}
             </Typography>
+            <Toggle
+                labels={['Education', 'Certifications']}
+                defaultLabel="Education"
+                onChange={(label) => console.log(label)}
+            />
+            </styles.Header>
             <styles.Container>
                 <EduCards
                     image={cardLogo}

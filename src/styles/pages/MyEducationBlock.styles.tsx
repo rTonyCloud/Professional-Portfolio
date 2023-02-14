@@ -5,6 +5,14 @@ export const Section = styled.div`
     min-width: 1250px;
     height: 650px;
 `
+
+export const Header = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+`
+
 export const Container = styled.div`
 color: white;
 `
