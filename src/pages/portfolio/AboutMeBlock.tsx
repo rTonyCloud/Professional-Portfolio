@@ -10,9 +10,9 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
     return (
         <styles.Container>
             <styles.AboutText>
-                <Typography variant="h1" sx={{ color: 'white' }}>
+                <styles.AnimatedGradientText>
                     {AboutMe}
-                </Typography>
+                </styles.AnimatedGradientText>
                 <Typography variant="body1" sx={{ color: 'white' }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     <br />

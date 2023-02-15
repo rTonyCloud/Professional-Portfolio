@@ -25,11 +25,18 @@ a {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/public/fonts/Montserrat/*') format('truetype');
+    src: local('Montserrat'),
+        url('/public/fonts/Montserrat/Montserrat-Regular.ttf');
 }
 @font-face {
-    font-family: 'roboto';
-    src: url('/public/fonts/Roboto/*') format('truetype');
+    font-family: 'Roboto';
+    src: local('Roboto'), url('/public/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'CourierPrime';
+    src: local('Courier_Prime'),
+        url('/public/fonts/Courier_Prime/CourierPrime-Regular.ttf');
 }
 
 @media screen and (max-width: 2500px) {

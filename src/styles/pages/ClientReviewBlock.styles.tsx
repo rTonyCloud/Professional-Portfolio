@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
     width: 100%;
@@ -9,4 +9,19 @@ export const Container = styled.div`
 
 export const ReviewSection = styled.div`
     color: white;
+`
+
+export const AnimatedGradientText = styled.h1`
+    color: #00c2ff;
+    background-image: linear-gradient(93.11deg, #00c2ff 15.03%, #ff75f4 83.95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat';
+    font-feature-settings: 'kern';
+    font-size: 49px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+    text-align: left;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
 `

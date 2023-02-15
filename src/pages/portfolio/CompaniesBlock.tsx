@@ -4,7 +4,7 @@ import * as styles from '@/styles/pages/CompaniesBlock.styles'
 import {
     QtumLogo,
     JCLogo,
-    BlockChainCenter,
+    BlockchainCenter,
     MicroMarketing,
     SpinnerNetworkLogo,
 } from '@/assets/images'
@@ -14,9 +14,9 @@ const CompaniesBlock: React.FC = (): JSX.Element => {
     return (
         <styles.Block>
             <styles.BlockWrapper>
-            <Typography variant="h1" sx={{ color: 'white' }}>
+            <styles.AnimatedGradientText>
                 {companyHeader}
-            </Typography>
+            </styles.AnimatedGradientText>
                 <styles.CardWrapper>
                     <CompanyCards
                         companyLogo={QtumLogo}

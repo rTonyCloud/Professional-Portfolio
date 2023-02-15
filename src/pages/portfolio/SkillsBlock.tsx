@@ -14,9 +14,9 @@ const SkillsBlock: React.FC = (): JSX.Element => {
     return (
         <>
             <styles.Container>
-                <Typography variant="h1" sx={style}>
+                <styles.AnimatedGradientText>
                     {skillsTitle}
-                </Typography>
+                </styles.AnimatedGradientText>
                 <styles.SkillsContainer>
                     <styles.Wrapper>
                         {SkillsImages.map((skills, index) => {

@@ -8,9 +8,9 @@ const projectHeader = '< My Projects />'
 const MyProjectsBlock: React.FC = (): JSX.Element => {
     return (
         <styles.Section>
-            <Typography variant="h1" sx={{ color: 'white' }}>
+            <styles.AnimatedGradientText>
                 {projectHeader}
-            </Typography>
+            </styles.AnimatedGradientText>
             <styles.Container>
                 <ProjectCards
                     src={Project1}

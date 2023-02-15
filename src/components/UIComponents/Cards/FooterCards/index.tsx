@@ -4,9 +4,7 @@ import * as styles from './FooterCards.styles'
 import { Variant } from '../../Typography'
 
 interface FooterCardsProps {
-    image: StaticImageData | string
-    width: number
-    height: number
+    src: StaticImageData
     alt: string
     title: string
     onClick?: () => void
@@ -19,13 +17,20 @@ const style = {
     marginTop: '20px',
 }
 
-const IconCardLayout: React.FC<FooterCardsProps> = (props: FooterCardsProps): JSX.Element => {
-    const { image, height, width, alt, title, variant, onClick } = props
+const IconCardLayout: React.FC<FooterCardsProps> = (
+    props: FooterCardsProps
+): JSX.Element => {
+    const { src, title, alt, variant, onClick } = props
 
     return (
         <styles.Card onClick={onClick}>
             <styles.Image>
-                <Image src={image} width={width} height={height} alt={alt} />
+                <Image
+                    src={src}
+                    alt={alt}
+                    width='50'
+                    height='50'
+                />
             </styles.Image>
             <styles.Wrapper>
                 <styles.Title>

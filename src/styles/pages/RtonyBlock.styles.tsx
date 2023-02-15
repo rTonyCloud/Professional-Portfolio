@@ -1,5 +1,14 @@
 import { profileCircleIcon } from '@/assets/icons'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const hue = keyframes`
+ from {
+   -webkit-filter: hue-rotate(0deg);
+ }
+ to {
+   -webkit-filter: hue-rotate(-360deg);
+ }
+`
 
 export const Container = styled.div`
     width: 100%;
@@ -88,7 +97,6 @@ export const ReactIcon = styled.div`
     position: absolute;
     top: 100px;
     right: 100px;
-
 `
 
 export const TypescriptIcon = styled.div`
@@ -96,4 +104,24 @@ export const TypescriptIcon = styled.div`
     position: absolute;
     top: 350px;
     right: 100px;
+`
+
+export const AnimatedGradientText = styled.h1`
+    color: #00C2FF;
+    background-image: linear-gradient(
+        92.61deg,
+        rgba(0, 194, 255, 0.85) 7.28%,
+        rgba(255, 117, 244, 0.799) 91.4%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: ${hue} 15s infinite linear;
+    font-family: 'Montserrat', 'Roboto';
+    font-feature-settings: 'kern';
+    font-size: 78px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
 `

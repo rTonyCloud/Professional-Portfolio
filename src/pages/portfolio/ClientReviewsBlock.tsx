@@ -11,9 +11,9 @@ const Description =
 const ClientReviewBlock: React.FC = (): JSX.Element => {
     return (
         <styles.Container>
-            <Typography variant="h1" sx={{ color: 'white' }}>
+            <styles.AnimatedGradientText>
                 {Header}
-            </Typography>
+            </styles.AnimatedGradientText>
             <styles.ReviewSection>
                 <Review
                     imageSRC={Person1}

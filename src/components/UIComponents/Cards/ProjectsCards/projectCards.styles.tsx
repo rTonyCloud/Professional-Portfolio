@@ -4,8 +4,8 @@ export const ProjectCard = styled.div`
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    height: 358px;
-    width: 472px;
+    height: calc(42vh - 50px);
+    width: calc(27vw - 45px);
     border: 2px solid #ffffff;
     box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
     border-radius: 4px;

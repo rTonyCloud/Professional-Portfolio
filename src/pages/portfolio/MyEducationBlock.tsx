@@ -9,14 +9,14 @@ const MyEducationBlock: React.FC = (): JSX.Element => {
     return (
         <styles.Section>
             <styles.Header>
-            <Typography variant="h1" sx={{ color: 'white' }}>
-                {eduHeader}
-            </Typography>
-            <Toggle
-                labels={['Education', 'Certifications']}
-                defaultLabel="Education"
-                onChange={(label) => console.log(label)}
-            />
+                <styles.AnimatedGradientText>
+                    {eduHeader}
+                </styles.AnimatedGradientText>
+                <Toggle
+                    labels={['Education', 'Certifications']}
+                    defaultLabel="Education"
+                    onChange={(label) => console.log(label)}
+                />
             </styles.Header>
             <styles.Container>
                 <EduCards
@@ -29,7 +29,7 @@ const MyEducationBlock: React.FC = (): JSX.Element => {
                     logo={blockLogo}
                     issueDate="2021"
                     credentialId="Credential ID: 123456789"
-                    logoAlt='udemy'
+                    logoAlt="udemy"
                     buttonText="View Certificate"
                     onClick={() => console.log('View Certificate')}
                 />

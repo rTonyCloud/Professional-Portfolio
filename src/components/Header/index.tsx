@@ -1,16 +1,15 @@
-import { heartIcon, rtonycloudLogo } from '@/assets/icons'
+import {rtonycloudLogo } from '@/assets/icons'
 import Image from 'next/image'
 import * as styles from './header.styles'
 import { Button } from '../UIComponents/'
+import {
+    navItems,
+    mediaItems,
+    buttonText,
+} from '@/utils/portfolioTexts/header.texts'
+import stylesGuide from '@/styles/components/components.styles'
 
-const navItems = ['About', 'Skills', 'Projects']
-const mediaItems = ['Github', 'LinkedIn']
-
-const buttonText = 'Download Resume'
-
-const buttonStyles = {
-    cursor: 'pointer',
-}
+const { HeaderbuttonStyles } = stylesGuide()
 
 const Header: React.FC = (): JSX.Element => {
     return (
@@ -19,15 +18,25 @@ const Header: React.FC = (): JSX.Element => {
                 {navItems.map((navItem, index) => (
                     <styles.navContent key={index}>{navItem}</styles.navContent>
                 ))}
-                {mediaItems.map((mediaItem, index) => (
-                    <styles.mediaItems key={index}>
-                        {mediaItem}
-                    </styles.mediaItems>
-                ))}
-                <Button variant="blue" sx={buttonStyles}>
-                    <Image src={heartIcon} alt="hello" width="20" />
-                    {buttonText}
-                </Button>
+                <styles.SecondNav>
+                    {mediaItems.map((mediaItem, index) => (
+                        <styles.mediaItems key={index}>
+                            {mediaItem.image}
+                            {mediaItem.title}
+                        </styles.mediaItems>
+                    ))}
+                    {buttonText.map((buttonText) => (
+                        <Button
+                            type="button"
+                            sx={HeaderbuttonStyles}
+                            key={buttonText.text}
+                            onClick={() => console.log('click me')}
+                        >
+                            {buttonText.image}
+                            {buttonText.text}
+                        </Button>
+                    ))}
+                </styles.SecondNav>
             </styles.headerContent>
             <styles.logoWrapper>
                 <Image src={rtonycloudLogo} alt="rtonycloud logo" width="200" />
