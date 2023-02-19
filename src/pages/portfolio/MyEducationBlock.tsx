@@ -1,9 +1,9 @@
 import { EduCards, Typography } from '@/components/UIComponents'
 import * as styles from '@/styles/pages/MyEducationBlock.styles'
-import { cardLogo } from '@/assets/images'
-import { blockLogo } from '@/assets/icons'
+import { cardLogo } from 'public/images'
+import { blockLogo } from 'public/icons'
 import Toggle from '@/components/UIComponents/Toggle'
-const eduHeader = '< My Education />'
+const eduHeader = '<My Education />'
 
 const MyEducationBlock: React.FC = (): JSX.Element => {
     return (

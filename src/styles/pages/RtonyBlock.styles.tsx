@@ -1,4 +1,4 @@
-import { profileCircleIcon } from '@/assets/icons'
+import { profileCircleIcon } from 'public/icons'
 import styled, { keyframes } from 'styled-components'
 
 const hue = keyframes`
@@ -107,7 +107,7 @@ export const TypescriptIcon = styled.div`
 `
 
 export const AnimatedGradientText = styled.h1`
-    color: #00C2FF;
+    color: #00c2ff;
     background-image: linear-gradient(
         92.61deg,
         rgba(0, 194, 255, 0.85) 7.28%,

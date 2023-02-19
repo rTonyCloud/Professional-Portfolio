@@ -6,6 +6,18 @@ export const Container = styled.div`
     height: 50vh;
 `
 
+export const Wrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border: 1px solid red;
+    &@qurty (max-width: 1024px) {
+    border: 1px solid blue;
+    }
+`
+
 export const AboutText = styled.div`
     display: flex;
     color: white;
@@ -13,7 +25,8 @@ export const AboutText = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
-    right: 450px;
+    white-space: pre-line;
+    border: 1px solid white;
 `
 
 
@@ -21,21 +34,15 @@ export const Card = styled.div`
     display: flex;
     justify-content: flex-end;
     position: relative;
-    right: 450px;
     border-radius: 6px;
-    bottom: 300px;
-    margin: 0 auto;
 `
 
 export const CardWrapper = styled.div`
     display: flex;
-    flex-wrap: wrap;
-    background-color: #4F4F4F;
-    width: 450px;
-    height: 137px;
-    justify-content: center;
+    flex-direction: column;
     position: relative;
-    left: 75px;
+    gap: 24px;
+    top: 20rem;
     `
 
 export const CardText = styled.div`

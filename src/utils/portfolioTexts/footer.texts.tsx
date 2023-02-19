@@ -3,7 +3,7 @@ import {
     footerGithubIcon,
     footerGmailIcon,
     footerLinkedinIcon,
-} from '@/assets/icons'
+} from 'public/icons'
 
 const footerCopyRight =
     'All rights reserved © 2023 - SOFTWARE DEVELOPER - by rTONYCLOUD'

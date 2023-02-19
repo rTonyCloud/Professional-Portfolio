@@ -10,22 +10,24 @@ interface AboutMeProps {
     width?: number | undefined
     height?: number | undefined
     alt: string
-    variant?: Variant | undefined
-    sx?: React.CSSProperties | undefined
+    variantHeader?: Variant | undefined
+    variantText?: Variant | undefined
+    sxHeader?: React.CSSProperties | undefined
+    sxBody?: React.CSSProperties | undefined
 }
 
 const AboutMeCard: React.FC<AboutMeProps> = (
     props: AboutMeProps
 ): JSX.Element => {
-    const { title, link, image, width, height, alt, variant, sx } = props
+    const { title, link, image, width, height, alt, variantHeader, variantText, sxHeader, sxBody } = props
     return (
         <styles.Card>
             <styles.CardWrapper>
                 <styles.CardText>
-                    <Typography variant={variant} sx={sx}>
+                    <Typography variant={variantHeader} sx={sxHeader}>
                         {title}
                     </Typography>
-                    <Typography variant={variant} sx={sx}>
+                    <Typography variant={variantText} sx={sxBody}>
                         {link}
                     </Typography>
                 </styles.CardText>

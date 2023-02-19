@@ -19,6 +19,7 @@ color: white;
 
 
 export const AnimatedGradientText = styled.h1`
+    display: flex;
     color: #00C2FF;
     background-image: linear-gradient(93.11deg, #00C2FF 15.03%, #FF75F4 83.95%);
     -webkit-background-clip: text;

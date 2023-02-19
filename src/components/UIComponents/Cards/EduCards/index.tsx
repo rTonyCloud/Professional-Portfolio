@@ -41,7 +41,7 @@ const EduCards: React.FC<EduCardsProps> = (
     return (
         <styles.Card>
             <styles.CardImage>
-                <Image src={image} width={width} height={height} alt={imgAlt} />
+                <Image src={image} width={width} height={height} alt={imgAlt} fill={true}/>
             </styles.CardImage>
             <styles.CardBody>
                 <Typography variant={variant} sx={sx}>
@@ -54,6 +54,7 @@ const EduCards: React.FC<EduCardsProps> = (
                             width={width}
                             height={height}
                             alt={logoAlt}
+                            fill={true}
                         />
                         <Typography variant={variant}>{company}</Typography>
                         <Typography variant={variant}>{issueDate}</Typography>

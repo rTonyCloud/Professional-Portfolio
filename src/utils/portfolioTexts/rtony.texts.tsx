@@ -1,7 +1,7 @@
 const RtonyPageTexts = () => {
     const Title = {
         Into: 'Hello, I am',
-        Header: '< rTonyCloud />',
+        Header: '<rTonyCloud />',
     }
 
     const JobTitle = 'Software Developer'

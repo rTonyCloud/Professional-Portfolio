@@ -3,13 +3,13 @@ import * as styles from './footer.styles'
 import {
     // footerLinks,
     footerCopyRight,
-} from '@/utils/portfolioTexts/footer.texts'
+} from '@/utils/portfolioTexts/Footer.texts'
 import FooterCards from '@/components/UIComponents/Cards/FooterCards'
 import {
     footerGithubIcon,
     footerGmailIcon,
     footerLinkedinIcon,
-} from '@/assets/icons'
+} from 'public/icons'
 
 const Footer: React.FC = (): JSX.Element => {
     return (

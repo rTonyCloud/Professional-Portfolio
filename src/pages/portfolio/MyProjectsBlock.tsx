@@ -1,9 +1,9 @@
-import { Project1 } from '@/assets/images'
+import { project1 } from 'public/images'
 import { Typography } from '@/components/UIComponents'
 import { ProjectCards } from '@/components/UIComponents/index'
 import * as styles from '@/styles/pages/MyProjectsBlock.styles'
 
-const projectHeader = '< My Projects />'
+const projectHeader = '<My Projects />'
 
 const MyProjectsBlock: React.FC = (): JSX.Element => {
     return (
@@ -13,7 +13,7 @@ const MyProjectsBlock: React.FC = (): JSX.Element => {
             </styles.AnimatedGradientText>
             <styles.Container>
                 <ProjectCards
-                    src={Project1}
+                    src={project1}
                     title="Project 1"
                     width={0}
                     height={349}
@@ -21,6 +21,11 @@ const MyProjectsBlock: React.FC = (): JSX.Element => {
                     sx={{ color: 'white' }}
                     variant="h5"
                 />
+                <styles.ButtonsRow>
+                    <styles.BottomLeftCircles />
+                    <styles.BottomMidCircles />
+                    <styles.BottomRightCircles />
+                </styles.ButtonsRow>
             </styles.Container>
         </styles.Section>
     )

@@ -8,7 +8,28 @@ export const Container = styled.div`
 `
 
 export const ReviewSection = styled.div`
+    display:flex;
+    justify-content: center;
     color: white;
+`
+
+export const ReviewSection1 = styled.div`
+    display:flex;
+    justify-content: flex-end;
+    color: white;
+`
+
+export const ReviewSection2 = styled.div`
+    display:flex;
+    justify-content: center;
+    color: white;
+`
+
+export const ReviewSection3 = styled.div`
+    display:flex;
+    justify-content: flex-end;
+    color: white;
+
 `
 
 export const AnimatedGradientText = styled.h1`

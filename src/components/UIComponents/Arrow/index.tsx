@@ -2,6 +2,7 @@ import Image from 'next/image'
 import * as styles from './Arrow.styles'
 
 interface Props {
+    icon: string
     width: number
     height: number
     alt: string
@@ -26,9 +27,21 @@ const Arrow: React.FC<Props> = (props: Props): JSX.Element => {
         top: '50%',
     }
 
+    const rightArrowIcon = {
+        position: 'absolute',
+        top: '50%',
+        transform: 'translateY(0,-50%)',
+        right: '32',
+        fontSize: '45px',
+        color: 'white',
+        zIndex: 1,
+        cursor: 'pointer',
+    }
+    
+
     return (
         <div style={styles} onClick={onClick}>
-            {/* <div style={arrowStyles}><Image src={icon} alt={alt} width={width} height={height}/></div> */}
+            <div style={arrowStyles}> </div>
         </div>
     )
 }

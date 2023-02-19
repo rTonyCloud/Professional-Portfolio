@@ -1,57 +1,57 @@
 import * as styles from '@/styles/pages/AboutMeBlock.styles'
-import { Typography } from '@/components/UIComponents'
-import { closeCodeIcon, dancingManIcon } from '@/assets/icons'
-import Image from 'next/image'
 import AboutMeCard from '@/components/UIComponents/Cards/AboutMeCard/index'
+import AboutTexts from '@/utils/portfolioTexts/About.texts'
+import { Typography } from '@/components/UIComponents'
+import { closeCodeIcon, dancingManIcon } from 'public/icons'
 
-const AboutMe = '< About Me />'
+const { AboutMe, AboutMeText } = AboutTexts()
 
 const AboutMeBlock: React.FC = (): JSX.Element => {
     return (
         <styles.Container>
-            <styles.AboutText>
-                <styles.AnimatedGradientText>
-                    {AboutMe}
-                </styles.AnimatedGradientText>
-                <Typography variant="body1" sx={{ color: 'white' }}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br />
-                    Integer velit turpis, finibus eu condimentum ut, posuere at{' '}
-                    <br />
-                    ipsum. Maecenas vel consequat mauris. Quisque sodales <br />
-                    ipsum aliquet aliquam placerat. Proin varius condimentum{' '}
-                    <br />
-                    nisl, sit amet aliquet nisl. Sed euismod, nisl sit amet
-                    dgsyr <br />
-                    aliquam, nisl nisl aliquam nisl, sit amet aliquet nisl. Sed{' '}
-                    <br />
-                </Typography>
-            </styles.AboutText>
-            <AboutMeCard
-                title="Software Developer"
-                link="Hire Me"
-                image={
-                    <Image
-                        src={closeCodeIcon}
+            <styles.Wrapper>
+                <styles.AboutText>
+                    <styles.AnimatedGradientText>
+                        {AboutMe}
+                    </styles.AnimatedGradientText>
+                    <Typography variant="h6" sx={{ color: 'white' }}>
+                        {AboutMeText()}
+                    </Typography>
+                </styles.AboutText>
+                <styles.CardWrapper>
+                    <AboutMeCard
+                        title="Software Developer"
+                        link="Hire Me"
+                        image={closeCodeIcon}
                         alt="closeCodeIcon"
-                        width={75}
+                        width={50}
                         height={50}
+                        variantText="body1"
+                        variantHeader="body2"
+                        sxHeader={{ color: '#fff', fontSize: '24px' }}
+                        sxBody={{
+                            color: '#70FF00',
+                            textDecoration: 'underline',
+                        }}
                     />
-                }
-            />
-            &n
-            <AboutMeCard
-                title="Professinal Dancer"
-                link="Watch Me"
-                image={
-                    <Image
-                        src={dancingManIcon}
-                        alt="closeCodeIcon"
-                        width={100}
-                        height={100}
+
+                    <AboutMeCard
+                        title="Professinal Dancer"
+                        link="Watch Me"
+                        image={dancingManIcon}
+                        alt="dancingManIcon"
+                        width={0}
+                        height={0}
+                        variantText="body1"
+                        variantHeader="body2"
+                        sxHeader={{ color: '#fff', fontSize: '24px' }}
+                        sxBody={{
+                            color: '#70FF00',
+                            textDecoration: 'underline',
+                        }}
                     />
-                }
-            />
+                </styles.CardWrapper>
+            </styles.Wrapper>
         </styles.Container>
     )
 }

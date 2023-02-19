@@ -1,13 +1,13 @@
-import {rtonycloudLogo } from '@/assets/icons'
+import { rtonycloudLogo } from 'public/icons'
 import Image from 'next/image'
 import * as styles from './header.styles'
+import stylesGuide from '@/styles/components/components.styles'
 import { Button } from '../UIComponents/'
 import {
     navItems,
     mediaItems,
     buttonText,
-} from '@/utils/portfolioTexts/header.texts'
-import stylesGuide from '@/styles/components/components.styles'
+} from '@/utils/portfolioTexts/Header.texts'
 
 const { HeaderbuttonStyles } = stylesGuide()
 
@@ -21,15 +21,18 @@ const Header: React.FC = (): JSX.Element => {
                 <styles.SecondNav>
                     {mediaItems.map((mediaItem, index) => (
                         <styles.mediaItems key={index}>
-                            {mediaItem.image}
-                            {mediaItem.title}
+                            <styles.MediaItemImage>
+                                {mediaItem.image}
+                            </styles.MediaItemImage>
+                            <styles.MediaItemTitle>
+                                {mediaItem.title}
+                            </styles.MediaItemTitle>
                         </styles.mediaItems>
                     ))}
-                    {buttonText.map((buttonText) => (
+                    {buttonText.map((buttonText, index) => (
                         <Button
                             type="button"
-                            sx={HeaderbuttonStyles}
-                            key={buttonText.text}
+                            key={index}
                             onClick={() => console.log('click me')}
                         >
                             {buttonText.image}
@@ -39,7 +42,7 @@ const Header: React.FC = (): JSX.Element => {
                 </styles.SecondNav>
             </styles.headerContent>
             <styles.logoWrapper>
-                <Image src={rtonycloudLogo} alt="rtonycloud logo" width="200" />
+                <Image src={rtonycloudLogo} alt="rtonycloud-logo" width="200" />
             </styles.logoWrapper>
         </styles.headerWrapper>
     )

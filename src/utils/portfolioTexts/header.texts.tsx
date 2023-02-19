@@ -1,15 +1,13 @@
 import Image from 'next/image'
-import {
-    githubIcon,
-    linkedinIcon,
-    heartIcon,
-} from '@/assets/icons'
+import { githubIcon, linkedinIcon, heartIcon } from 'public/icons'
 
 export const navItems = ['About', 'Skills', 'Projects']
 
 export const mediaItems = [
     {
-        image: <Image src={githubIcon} alt="github" width="30" />,
+        image: (
+            <Image src={githubIcon} alt="github" width="30" className="image" />
+        ),
         title: 'Github',
         url: 'www.github.com/rtonycloud',
     },

@@ -8,24 +8,37 @@ export const Card = styled.div`
     border-radius: 6px;
     bottom: 300px;
     margin: 0 auto;
-    
 `
 
 export const CardWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
-    background-color: #4F4F4F;
-    width: 450px;
-    height: 137px;
+    background-color: #4f4f4f;
+    border: 2px solid #4f4f4f;
     justify-content: center;
     position: relative;
-    left: 75px;
     cursor: pointer;
-    `
+    width: 450px;
+    height: 137px;
+    left: 75px;
+    &:hover{
+        border-image: linear-gradient(
+                90.17deg,
+                #00c2ff 14.29%,
+                rgba(255, 117, 244, 0.63) 89.66%
+            )
+            1;
+        border-radius: 1px !important
+    }
+    &:active {
+        transform: scale(1.05);
+    }
+`
 
 export const CardText = styled.div`
     display: flex;
     flex-direction: column;
+    font-size: 24px;
 `
 
 export const CardImage = styled.div`

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const footerContainer = styled.div`
     width: 100%;
     min-width: 1250px;
-    height: 250px;
+    height: 50vh;
     bottom: 0;
     position: relative;
     background: #161616;
@@ -12,9 +12,10 @@ export const footerContainer = styled.div`
 `
 
 export const line = styled.hr`
-    position: absolute;
-    width: 50%;
-    left: 25vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 75vw;
     top: 10px;
     background: #8383831a;
     border: 5px solid rgba(131, 131, 131, 0.1);
@@ -23,6 +24,7 @@ export const line = styled.hr`
 export const footerContent = styled.a`
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     top: 50px;
     gap: 50px;

@@ -7,7 +7,6 @@ background: rgba(255, 255, 255, 0.1);
 border-radius: 49.5px;
 width: 250px;
 height: 75px;
-
 `;
 
 export const Button = styled.div`
@@ -41,8 +40,8 @@ text-align: center;
     transition: 0.2s;
 }
 &:hover {
-    background: #00C2FF;
+    background: #00C2FF;\
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 130px;
-    transition: 0.8s;
+    transition: 0.1s;
 `

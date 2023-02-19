@@ -6,18 +6,18 @@ import {
     nodejsProfileIcon,
     reactProfileIcon,
     typescriptProfileIcon,
-} from '@/assets/icons'
-import { TonyRivera } from '@/assets/images'
-import RtonyPageTexts from '@/utils/portfolioTexts/rtony.texts'
-import stylesGuide from '@/styles/components/components.styles'
+} from 'public/icons'
+import { tonyRivera } from 'public/images'
+import RtonyPageTexts from '@/utils/portfolioTexts/Rtony.texts'
+// import stylesGuide from '@/styles/components/components.styles'
 
 const { Title, JobTitle, Experience, Projects } = RtonyPageTexts()
-const { rtonytextStyle, RtonyExperienceStyle, RtonyYearsStyle } = stylesGuide()
+// const { rtonytextStyle, RtonyExperienceStyle, RtonyYearsStyle } = stylesGuide()
 
-const style = {
-    background:
-        'linear-gradient(92.61deg, rgba(0, 194, 255, 0.85) 7.28%, rgba(255, 117, 244, 0.799) 91.4%)',
-}
+// const style = {
+//     background:
+//         'linear-gradient(92.61deg, rgba(0, 194, 255, 0.85) 7.28%, rgba(255, 117, 244, 0.799) 91.4%)',
+// }
 
 const RtonyBlock: React.FC = (): JSX.Element => {
     return (
@@ -43,7 +43,7 @@ const RtonyBlock: React.FC = (): JSX.Element => {
                 </styles.ProfileCircle>
                 <styles.ProfileImage>
                     <Image
-                        src={TonyRivera}
+                        src={tonyRivera}
                         alt="profile"
                         width={500}
                         height={500}

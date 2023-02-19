@@ -32,9 +32,9 @@ const stylesGuide = () => {
     const HeaderbuttonStyles = {
             display: 'flex',
             padding: '1em',
-            background:
-                'linear-gradient(94.81deg, rgb(0, 194, 255) 2.9%, rgba(255, 117, 244, 0.63) 79.84%, rgba(255, 117, 244, 0.63) 79.84%)',
-        }
+            background:'#00c2ff',
+            border: '1px solid #ffffff',
+            }
 
     return { HeaderbuttonStyles, rtonytextStyle, RtonyExperienceStyle, RtonyYearsStyle}
 }
