@@ -1,13 +1,13 @@
 import { rtonycloudLogo } from 'public/icons'
 import Image from 'next/image'
 import * as styles from './header.styles'
-import stylesGuide from '@/styles/components/components.styles'
+import stylesGuide from '../../styles/components/components.styles'
 import { Button } from '../UIComponents/'
 import {
     navItems,
     mediaItems,
     buttonText,
-} from '@/utils/portfolioTexts/Header.texts'
+} from '../../utils/portfolioTexts/Header.texts'
 
 const { HeaderbuttonStyles } = stylesGuide()
 
