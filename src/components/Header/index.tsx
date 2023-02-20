@@ -9,7 +9,7 @@ import {
     mediaItems,
     buttonText,
 } from '@/utils/portfolioTexts/Header.texts'
-
+//@ts-ignore
 const { HeaderbuttonStyles } = stylesGuide()
 
 const Header: React.FC = (): JSX.Element => {
