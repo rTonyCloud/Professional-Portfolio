@@ -4,7 +4,7 @@ import * as styles from '@/styles/pages/CompaniesBlock.styles'
 import {
     qtumLogo,
     jciLogo,
-    blockChainCenter,
+    blockchainCenter,
     microMarketing,
     summitMediaLogo,
     spinnerNetworkLogo,
@@ -31,7 +31,7 @@ const CompaniesBlock: React.FC = (): JSX.Element => {
                         }
                     />
                     <CompanyCards
-                        companyLogo={blockChainCenter}
+                        companyLogo={blockchainCenter}
                         alt="Blockchain-Center-logo"
                         width={0}
                         height={0}
