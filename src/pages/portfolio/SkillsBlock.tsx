@@ -1,6 +1,6 @@
-import * as styles from '@/styles/pages/SkillsBlock.styles'
-import { SkillsImages } from '@/utils/portfolioTexts/Skills.text'
-import { rightArrowIcon } from 'public/icons'
+import * as styles from '../../styles/pages/SkillsBlock.styles'
+import { SkillsImages } from '../../utils/portfolioTexts/Skills.text'
+import { rightArrowIcon } from '../../../public/icons'
 import Image from 'next/image'
 
 const skillsTitle = '<Skills />'

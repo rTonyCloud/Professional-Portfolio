@@ -1,8 +1,8 @@
-import * as styles from '@/styles/pages/AboutMeBlock.styles'
-import AboutMeCard from '@/components/UIComponents/Cards/AboutMeCard/index'
-import AboutTexts from '@/utils/portfolioTexts/About.texts'
-import { Typography } from '@/components/UIComponents'
-import { closeCodeIcon, dancingManIcon } from 'public/icons'
+import * as styles from '../../styles/pages/AboutMeBlock.styles'
+import AboutMeCard from '../../components/UIComponents/Cards/AboutMeCard/index'
+import AboutTexts from '../../utils/portfolioTexts/About.texts'
+import { Typography } from '../../components/UIComponents'
+import { closeCodeIcon, dancingManIcon } from '../../../public/icons'
 
 const { AboutMe, AboutMeText } = AboutTexts()
 

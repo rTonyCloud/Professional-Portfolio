@@ -1,6 +1,6 @@
-import { CompanyCards, Typography } from '@/components/UIComponents'
-import LineWithCircles from '@/components/UIComponents/HR'
-import * as styles from '@/styles/pages/CompaniesBlock.styles'
+import { CompanyCards, Typography } from '../../components/UIComponents'
+import LineWithCircles from '../../components/UIComponents/HR'
+import * as styles from '../../styles/pages/CompaniesBlock.styles'
 import {
     qtumLogo,
     jciLogo,
@@ -8,7 +8,7 @@ import {
     microMarketing,
     summitMediaLogo,
     spinnerNetworkLogo,
-} from 'public/images'
+} from '../../../public/images'
 const companyHeader = '<Companies/>'
 
 const CompaniesBlock: React.FC = (): JSX.Element => {

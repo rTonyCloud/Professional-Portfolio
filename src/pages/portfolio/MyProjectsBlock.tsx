@@ -1,7 +1,7 @@
-import { project1 } from 'public/images'
-import { Typography } from '@/components/UIComponents'
-import { ProjectCards } from '@/components/UIComponents/index'
-import * as styles from '@/styles/pages/MyProjectsBlock.styles'
+import { project1 } from '../../../public/images'
+import { Typography } from '../../components/UIComponents'
+import { ProjectCards } from '../../components/UIComponents/index'
+import * as styles from '../../styles/pages/MyProjectsBlock.styles'
 
 const projectHeader = '<My Projects />'
 
