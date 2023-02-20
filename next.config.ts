@@ -3,6 +3,7 @@ const nextConfig = {
     compiler: {
         //enables swc for style components
         styledComponents: true,
+        
     },
     reactStrictMode: true,
 }

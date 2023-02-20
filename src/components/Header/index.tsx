@@ -1,4 +1,4 @@
-import { rtonycloudLogo } from 'public/icons'
+import { rtonycloudLogo } from '../../../public/icons'
 import Image from 'next/image'
 import * as styles from './header.styles'
 import stylesGuide from '../../styles/components/components.styles'

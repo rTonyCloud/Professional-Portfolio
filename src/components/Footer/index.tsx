@@ -1,11 +1,11 @@
 import * as styles from './footer.styles'
 
-import FooterCards from '@/components/UIComponents/Cards/FooterCards'
+import FooterCards from '../../components/UIComponents/Cards/FooterCards'
 import {
     footerGithubIcon,
     footerGmailIcon,
     footerLinkedinIcon,
-} from 'public/icons'
+} from '../../../public/icons'
 
 const footerCopyRight =
     'All rights reserved © 2023 - SOFTWARE DEVELOPER - by rTONYCLOUD'
