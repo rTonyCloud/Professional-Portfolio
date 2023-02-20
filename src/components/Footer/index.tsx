@@ -1,15 +1,14 @@
 import * as styles from './footer.styles'
 
-import {
-    // footerLinks,
-    footerCopyRight,
-} from '@/utils/portfolioTexts/Footer.texts'
 import FooterCards from '@/components/UIComponents/Cards/FooterCards'
 import {
     footerGithubIcon,
     footerGmailIcon,
     footerLinkedinIcon,
 } from 'public/icons'
+
+const footerCopyRight =
+    'All rights reserved © 2023 - SOFTWARE DEVELOPER - by rTONYCLOUD'
 
 const Footer: React.FC = (): JSX.Element => {
     return (
