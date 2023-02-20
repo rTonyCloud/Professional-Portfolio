@@ -41,6 +41,7 @@ const CompanyCards: React.FC<CompanyCardsProps> = (
                         alt={alt}
                         width={width}
                         height={height}
+                        className='image'
                     />
                 </styles.Image>
                 <styles.Title>

@@ -16,8 +16,8 @@ export const BlockWrapper = styled.div`
 export const Circle = styled.div`
     display: flex;
     flex-direction: column;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 25px;
     border-radius: 100%;
     z-index: 1;
     border: 4px solid #00c2ff;
