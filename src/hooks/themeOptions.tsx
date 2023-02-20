@@ -1,3 +1,5 @@
+import React from "react"
+
 const useThemeOptions = () => {
     const [theme, setTheme] = React.useState('dark')
     const toggleTheme = () => {
@@ -11,3 +13,5 @@ const useThemeOptions = () => {
     }
     return { theme, toggleTheme }
 }
+
+export default useThemeOptions
