@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import { githubIcon, linkedinIcon, heartIcon } from 'public/icons'
 
-export const navItems = ['About', 'Skills', 'Projects']
+export const NavItems = ['About', 'Skills', 'Projects']
 
-export const mediaItems = [
+export const MediaItems = [
     {
         image: (
             <Image src={githubIcon} alt="github" width="30" className="image" />
@@ -18,7 +18,7 @@ export const mediaItems = [
     },
 ]
 
-export const buttonText = [
+export const ButtonText = [
     {
         image: <Image src={heartIcon} alt="hello" width="20" />,
         text: 'Download Resume',

@@ -5,9 +5,9 @@ import stylesGuide from '@/styles/components/components.styles'
 import { Button } from '../UIComponents/'
 //@ts-ignore
 import {
-    navItems,
-    mediaItems,
-    buttonText,
+    NavItems,
+    MediaItems,
+    ButtonText,
 } from '@/utils/portfolioTexts/Header.texts'
 //@ts-ignore
 const { HeaderbuttonStyles } = stylesGuide()
@@ -16,28 +16,28 @@ const Header: React.FC = (): JSX.Element => {
     return (
         <styles.headerWrapper>
             <styles.headerContent>
-                {navItems.map((navItem, index) => (
-                    <styles.navContent key={index}>{navItem}</styles.navContent>
+                {NavItems.map((NavItems, index) => (
+                    <styles.navContent key={index}>{NavItems}</styles.navContent>
                 ))}
                 <styles.SecondNav>
-                    {mediaItems.map((mediaItem, index) => (
+                    {MediaItems.map((MediaItems, index) => (
                         <styles.mediaItems key={index}>
                             <styles.MediaItemImage>
-                                {mediaItem.image}
+                                {MediaItems.image}
                             </styles.MediaItemImage>
                             <styles.MediaItemTitle>
-                                {mediaItem.title}
+                                {MediaItems.title}
                             </styles.MediaItemTitle>
                         </styles.mediaItems>
                     ))}
-                    {buttonText.map((buttonText, index) => (
+                    {ButtonText.map((ButtonText, index) => (
                         <Button
                             type="button"
                             key={index}
                             onClick={() => console.log('click me')}
                         >
-                            {buttonText.image}
-                            {buttonText.text}
+                            {ButtonText.image}
+                            {ButtonText.text}
                         </Button>
                     ))}
                 </styles.SecondNav>
