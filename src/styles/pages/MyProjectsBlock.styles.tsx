@@ -1,4 +1,4 @@
-import { Button } from '@/components/UIComponents'
+import { Button } from '../../components/UIComponents'
 import styled from 'styled-components'
 
 export const Section = styled.div``

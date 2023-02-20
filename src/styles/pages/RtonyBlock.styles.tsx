@@ -1,4 +1,4 @@
-import { profileCircleIcon } from 'public/icons'
+import { profileCircleIcon } from '../../../public/icons'
 import styled, { keyframes } from 'styled-components'
 
 const hue = keyframes`
