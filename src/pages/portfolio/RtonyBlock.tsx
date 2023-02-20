@@ -1,14 +1,14 @@
-import * as styles from '../../styles/pages/RtonyBlock.styles'
+import * as styles from '@/styles/pages/RtonyBlock.styles'
 import Image from 'next/image'
-import { Typography } from '../../components/UIComponents'
+import { Typography } from '@/components/UIComponents'
 import {
     profileCircleIcon,
     nodejsProfileIcon,
     reactProfileIcon,
     typescriptProfileIcon,
-} from '../../../public/icons'
-import { tonyRivera } from '../../../public/images'
-import RtonyPageTexts from '../../utils/portfolioTexts/Rtony.texts'
+} from 'public/icons'
+import { tonyRivera } from 'public/images'
+import RtonyPageTexts from '@/utils/portfolioTexts/Rtony.texts'
 // import stylesGuide from '@/styles/components/components.styles'
 
 const { Title, JobTitle, Experience, Projects } = RtonyPageTexts()
