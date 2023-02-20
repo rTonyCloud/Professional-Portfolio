@@ -8,7 +8,7 @@ import {
     NavItems,
     MediaItems,
     ButtonText,
-} from '@/utils/portfolioTexts/Header.texts'
+} from '../../utils/portfolioTexts/Header.texts'
 //@ts-ignore
 const { HeaderbuttonStyles } = stylesGuide()
 
@@ -17,7 +17,9 @@ const Header: React.FC = (): JSX.Element => {
         <styles.headerWrapper>
             <styles.headerContent>
                 {NavItems.map((NavItems, index) => (
-                    <styles.navContent key={index}>{NavItems}</styles.navContent>
+                    <styles.navContent key={index}>
+                        {NavItems}
+                    </styles.navContent>
                 ))}
                 <styles.SecondNav>
                     {MediaItems.map((MediaItems, index) => (
