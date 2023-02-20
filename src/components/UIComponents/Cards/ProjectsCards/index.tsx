@@ -19,7 +19,13 @@ const ProjectCards: React.FC<ProjectCardsProps> = (
     return (
         <styles.ProjectCard>
             <styles.ProjectImage>
-                <Image src={src} alt={alt} width={width} height={height} className={'image'} />
+                <Image
+                    src={src}
+                    alt={alt}
+                    width={width}
+                    height={height}
+                    className={'image'}
+                />
             </styles.ProjectImage>
             <styles.ProjectBody>
                 <styles.BodyTitle>

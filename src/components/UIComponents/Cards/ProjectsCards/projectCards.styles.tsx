@@ -20,7 +20,7 @@ export const ProjectCard = styled.div`
         border-radius: 4px !important;
     }
     transition: all 0.3s ease-in-out;
-    :active {
+    &:active {
         transform: scale(0.95);
     }
 `
@@ -31,7 +31,7 @@ export const ProjectImage = styled.div`
     width: 100%;
     height: 100%;
     z-index: 1;
-    .image {
+    &.image {
         object-fit: contain;
         width: 100%;
         position: relative;
