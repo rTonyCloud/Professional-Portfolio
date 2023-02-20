@@ -24,3 +24,4 @@ export const buttonText = [
         text: 'Download Resume',
     },
 ]
+

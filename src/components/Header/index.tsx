@@ -3,6 +3,7 @@ import Image from 'next/image'
 import * as styles from './header.styles'
 import stylesGuide from '@/styles/components/components.styles'
 import { Button } from '../UIComponents/'
+//@ts-ignore
 import {
     navItems,
     mediaItems,
