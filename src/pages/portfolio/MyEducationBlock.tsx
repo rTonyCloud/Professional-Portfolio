@@ -1,6 +1,6 @@
 import { EduCards, Typography } from '@/components/UIComponents'
 import * as styles from '@/styles/pages/MyEducationBlock.styles'
-import { cardLogo } from 'public/images'
+import { cardLogo, umLogo } from 'public/images'
 import { blockLogo } from 'public/icons'
 import Toggle from '@/components/UIComponents/Toggle'
 const eduHeader = '<My Education />'
@@ -20,16 +20,17 @@ const MyEducationBlock: React.FC = (): JSX.Element => {
             </styles.Header>
             <styles.Container>
                 <EduCards
-                    image={cardLogo}
+                    image={umLogo}
                     width={0}
                     height={0}
+                    sx={{fontSize: '36px', position: 'relative', lineHeight: '40px', top: '-40px'}}
                     imgAlt="udemy"
-                    title="The Complete 2021 Web Development Bootcamp"
-                    company="Udemy"
+                    title="Full Stack Web Development"
+                    company="University of Miami"
                     logo={blockLogo}
-                    issueDate="2021"
+                    issueDate="Issue Dec, 2021"
                     credentialId="Credential ID: 123456789"
-                    logoAlt="udemy"
+                    logoAlt="UM"
                     buttonText="View Certificate"
                     onClick={() => console.log('View Certificate')}
                 />

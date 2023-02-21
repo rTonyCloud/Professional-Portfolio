@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Section = styled.div`
     width: 100%;
     min-width: 1250px;
-    height: 100%;
+    height: 100vh;
 `
 
 export const Header = styled.div`

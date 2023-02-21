@@ -8,7 +8,9 @@ import tonyRivera from '../images/tonyRivera.png'
 import project1 from '../images/project1.svg'
 import cardLogo from '../images/cardLogo.svg'
 import summitMediaLogo from '../images/summitMediaLogo.png'
+import umLogo from '../images/um.webp'
 export {
+    umLogo,
     blockchainCenter,
     jciLogo,
     microMarketing,

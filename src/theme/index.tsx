@@ -17,7 +17,7 @@ export const darkTheme = {
 export const theme = createGlobalStyle`
 
 `
-const sizes = {
+export const sizes = {
     mobileS: '320px',
     mobileM: '375px',
     mobileL: '425px',

@@ -2,8 +2,16 @@
 
 const stylesGuide = () => {
 
+    const edubodyStyle = {
+        position: 'absolute',
+        bottom: '120px',
+        left: '55px',
+        fontSize: '14px',
+        fontFamily: 'Inter',
+        fontWeight: '400',
+    }
 
-    const rtonytextStyle = {
+    const rtonyTextStyle = {
         fontFamily: 'Montserrat',
         fontStyle: 'normal',
         fontWeight: '700',
@@ -36,7 +44,7 @@ const stylesGuide = () => {
             border: '1px solid #ffffff',
             }
 
-    return { HeaderbuttonStyles, rtonytextStyle, RtonyExperienceStyle, RtonyYearsStyle}
+    return { HeaderbuttonStyles, rtonyTextStyle, RtonyExperienceStyle, RtonyYearsStyle}
 }
 
 export default stylesGuide

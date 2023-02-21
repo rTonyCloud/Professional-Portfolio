@@ -1,12 +1,17 @@
-import { Button } from '../../components/UIComponents'
+import { Button } from '@/components/UIComponents'
 import styled from 'styled-components'
 
-export const Section = styled.div``
-
-export const Container = styled.div`
+export const Section = styled.div`
     width: 100%;
     min-width: 1250px;
-    height: 550px;
+    height: 100%;
+`
+
+export const Container = styled.div`
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
 `
 
 export const AnimatedGradientText = styled.p`
@@ -60,5 +65,4 @@ export const ButtonsRow = styled.div`
             rgba(255, 117, 244, 0.799) 91.4%
         );
     }
-
 `

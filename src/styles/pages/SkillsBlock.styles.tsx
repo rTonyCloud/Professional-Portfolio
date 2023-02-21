@@ -4,19 +4,19 @@ import { devices } from '../../theme'
 export const Container = styled.div`
     width: 100%;
     min-width: 1250px;
-    height: 705px;
+    height: 100%;
     background-color: #161616;
     position: relative;
 `
 
 export const SkillsSlider = styled.div`
     width: 100%;
-    height: 65vh;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 `
 export const Wrapper = styled.div`
     display: flex;
@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
     width: 1250px;
     height: 50vh;
     position: relative;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     @media (max-width: 1200px) {
         flex-direction: row;
         justify-content: center;
@@ -36,7 +36,6 @@ export const Skills = styled.div`
     justify-content: center;
     align-items: center;
     height: 150px;
-    border: 1px solid blue;
     @media (min-width: 100px) {
         width: 200px;
         flex-direction: row;
@@ -91,25 +90,23 @@ export const RightArrow = styled.div`
 `
 
 export const BottomLeftCircles = styled.div`
-    position: absolute;
     width: 28.3px;
     height: 28.3px;
-    top: 40rem;
-    left: 53rem;
     border-radius: 50%;
     border: 1px solid #ffffff;
     cursor: pointer;
     background-color: #00c2ff;
+    @media ${devices.laptop}, ${devices.tablet}, ${devices.mobileL} {
+    }
 `
 export const BottomRightCircles = styled.div`
-    position: absolute;
     width: 28.3px;
     height: 28.3px;
-    top: 40rem;
-    right: 63rem;
     border-radius: 50%;
     border: 1px solid #ffffff;
     cursor: pointer;
+    @media ${devices.laptop}, ${devices.tablet}, ${devices.mobileL} {
+    }
 `
 
 export const ButtonsRow = styled.div`

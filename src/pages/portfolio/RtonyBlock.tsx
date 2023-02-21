@@ -39,6 +39,7 @@ const RtonyBlock: React.FC = (): JSX.Element => {
                         alt="profile"
                         width={582}
                         height={582}
+                        className='profile-circle'
                     />
                 </styles.ProfileCircle>
                 <styles.ProfileImage>

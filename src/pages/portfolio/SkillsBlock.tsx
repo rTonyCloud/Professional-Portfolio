@@ -5,17 +5,12 @@ import Image from 'next/image'
 
 const skillsTitle = '< Skills />'
 
-const style = {
-    color: 'white',
-}
-
-
-const RightArrowStyles ={
+const RightArrowStyles = {
     display: 'flex',
     marginLeft: '20px',
 }
 
-const leftArrowStyles ={
+const leftArrowStyles = {
     display: 'flex',
     marginLeft: '20px',
     transform: 'rotate(180deg)',
@@ -29,7 +24,15 @@ const SkillsBlock: React.FC = (): JSX.Element => {
                     {skillsTitle}
                 </styles.AnimatedGradientText>
                 <styles.SkillsSlider>
-                    <styles.LeftArrow><Image src={rightArrowIcon} width='10' height='50' alt='right-arrow' style={RightArrowStyles}/></styles.LeftArrow>
+                    <styles.LeftArrow>
+                        <Image
+                            src={rightArrowIcon}
+                            width="10"
+                            height="50"
+                            alt="right-arrow"
+                            style={RightArrowStyles}
+                        />
+                    </styles.LeftArrow>
                     <styles.Wrapper>
                         {SkillsImages.map((skills, index) => {
                             return (
@@ -39,11 +42,11 @@ const SkillsBlock: React.FC = (): JSX.Element => {
                             )
                         })}
                     </styles.Wrapper>
-                    <styles.ButtonsRow>
-                    <styles.BottomLeftCircles />
-                    <styles.BottomRightCircles />
-                    </styles.ButtonsRow>
                 </styles.SkillsSlider>
+                    <styles.ButtonsRow>
+                        <styles.BottomLeftCircles />
+                        <styles.BottomRightCircles />
+                    </styles.ButtonsRow>
             </styles.Container>
         </>
     )

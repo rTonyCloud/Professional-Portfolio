@@ -2,6 +2,8 @@ import Image, { StaticImageData } from 'next/image'
 import * as styles from './EduCards.styles'
 import Typography, { Variant } from '../../Typography'
 
+
+
 interface EduCardsProps {
     image: StaticImageData
     width: number
@@ -41,31 +43,72 @@ const EduCards: React.FC<EduCardsProps> = (
     return (
         <styles.Card>
             <styles.CardImage>
-                <Image src={image} width={width} height={height} alt={imgAlt} fill={true}/>
+                <Image
+                    src={image}
+                    width={width}
+                    height={height}
+                    alt={imgAlt}
+                    className="image"
+                />
             </styles.CardImage>
             <styles.CardBody>
                 <Typography variant={variant} sx={sx}>
                     {title}
                 </Typography>
-                <styles.CardBodyBottomWrapper>
+                <styles.CardBodyContent>
                     <styles.CardBodyRightWrapper>
                         <Image
                             src={logo}
                             width={width}
                             height={height}
                             alt={logoAlt}
-                            fill={true}
+                            className="image"
                         />
-                        <Typography variant={variant}>{company}</Typography>
-                        <Typography variant={variant}>{issueDate}</Typography>
-                        <Typography variant={variant}>
+                        <Typography
+                            variant={variant}
+                            sx={{
+                                position: 'relative',
+                                left: '10px',
+                                top: '-10px',
+                                fontSize: '18px',
+                                fontFamily: 'Inter',
+                                fontWeight: '600',
+                            }}
+                        >
+                            {company}
+                        </Typography>
+                        <Typography
+                            variant={variant}
+                            sx={{
+                                position: 'absolute',
+                                bottom: '100px',
+                                left: '55px',
+                                fontSize: '14px',
+                                fontFamily: 'Inter',
+                                fontWeight: '400',
+                            }}
+                        >
+                            {issueDate}
+                        </Typography>
+                        <Typography
+                            variant={variant}
+                            sx={{
+                                position: 'absolute',
+                                bottom: '85px',
+                                left: '55px',
+                                fontSize: '14px',
+                                fontFamily: 'Inter',
+                                fontWeight: '400',
+                            }}
+                        >
                             {credentialId}
+                            {'\n'}
                         </Typography>
                     </styles.CardBodyRightWrapper>
                     <styles.Button onClick={onClick}>
                         <Typography variant={variant}>{buttonText}</Typography>
                     </styles.Button>
-                </styles.CardBodyBottomWrapper>
+                </styles.CardBodyContent>
             </styles.CardBody>
         </styles.Card>
     )

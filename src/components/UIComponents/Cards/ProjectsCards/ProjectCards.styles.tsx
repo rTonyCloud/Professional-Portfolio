@@ -1,11 +1,11 @@
+import { devices } from '@/theme'
 import styled from 'styled-components'
 
 export const ProjectCard = styled.div`
     display: block;
-    flex-wrap: wrap;
     position: relative;
-    height: calc(40% - 20px);
-    width: calc(21% - 20px);
+    height: calc(21.88rem - 5px);
+    width: calc(29.44rem - 5px);
     border: 2px solid #ffffff;
     box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
@@ -23,6 +23,13 @@ export const ProjectCard = styled.div`
     &:active {
         transform: scale(0.95);
     }
+    @media ${devices.mobileS} {
+        display: block;
+    }
+    @media ${devices.mobileM} {
+        display: block;
+  
+    }
 `
 
 export const ProjectImage = styled.div`
@@ -31,11 +38,11 @@ export const ProjectImage = styled.div`
     width: 100%;
     height: 100%;
     z-index: 1;
-    &.image {
+    overflow: hidden;
+    .image {
         object-fit: contain;
-        width: 100%;
-        position: relative;
-        height: 100%;
+        background-size: contain;
+        overflow: hidden;
     }
 `
 

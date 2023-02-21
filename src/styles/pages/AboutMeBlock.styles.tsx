@@ -1,9 +1,10 @@
+import { devices } from '@/theme'
 import styled from 'styled-components'
 
 export const Container = styled.div`
     width: 100%;
     min-width: 1250px;
-    height: 50vh;
+    height: 100%;
 `
 
 export const Wrapper = styled.div`
@@ -12,9 +13,10 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     position: relative;
-    border: 1px solid red;
-    &@qurty (max-width: 1024px) {
-    border: 1px solid blue;
+    @media ${devices.tablet}, ${devices.mobileS}, ${devices.mobileM} {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 `
 
@@ -35,6 +37,9 @@ export const Card = styled.div`
     justify-content: flex-end;
     position: relative;
     border-radius: 6px;
+    @media ${devices.tablet}, ${devices.mobileS}, ${devices.mobileM}{
+
+    }
 `
 
 export const CardWrapper = styled.div`
@@ -43,6 +48,12 @@ export const CardWrapper = styled.div`
     position: relative;
     gap: 24px;
     top: 20rem;
+    @media ${devices.tablet}, ${devices.mobileS}, ${devices.mobileM} {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 22rem;
+    }
     `
 
 export const CardText = styled.div`
