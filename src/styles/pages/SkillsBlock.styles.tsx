@@ -23,12 +23,13 @@ export const Wrapper = styled.div`
     flex-wrap: wrap;
     flex-direction: row;
     width: 1250px;
-    height: 50vh;
+    height: 100%;
     position: relative;
     /* border: 1px solid red; */
     @media (max-width: 1200px) {
         flex-direction: row;
         justify-content: center;
+        max-width: 20%;
     }
 `
 export const Skills = styled.div`
@@ -36,7 +37,6 @@ export const Skills = styled.div`
     justify-content: center;
     align-items: center;
     height: 150px;
-    border: 1px solid blue;
     @media (min-width: 100px) {
         width: 200px;
         flex-direction: row;
