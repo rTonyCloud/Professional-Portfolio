@@ -11,7 +11,7 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
         <styles.Container>
             <styles.Wrapper>
                 <styles.AboutText>
-                    <styles.AnimatedGradientText>
+                    <styles.AnimatedGradientText id='about'>
                         {AboutMe}
                     </styles.AnimatedGradientText>
                     <Typography variant="h6" sx={{ color: 'white' }}>

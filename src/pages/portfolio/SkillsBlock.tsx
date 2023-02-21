@@ -20,7 +20,7 @@ const SkillsBlock: React.FC = (): JSX.Element => {
     return (
         <>
             <styles.Container>
-                <styles.AnimatedGradientText>
+                <styles.AnimatedGradientText id='skills'>
                     {skillsTitle}
                 </styles.AnimatedGradientText>
                 <styles.SkillsSlider>

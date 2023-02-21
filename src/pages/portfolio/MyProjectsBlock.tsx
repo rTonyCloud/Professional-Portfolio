@@ -8,7 +8,7 @@ const projectHeader = '<My Projects />'
 const MyProjectsBlock: React.FC = (): JSX.Element => {
     return (
         <styles.Section>
-            <styles.AnimatedGradientText>
+            <styles.AnimatedGradientText id="projects">
                 {projectHeader}
             </styles.AnimatedGradientText>
             <styles.Container>

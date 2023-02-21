@@ -18,7 +18,6 @@ export const Wrapper = styled.div`
         justify-content: center;
         align-items: center;
         height: 100vh;
-        
     }
 `
 
@@ -30,13 +29,12 @@ export const AboutText = styled.div`
     align-items: center;
     position: relative;
     white-space: pre-line;
-    border: 1px solid white;
+    margin-left: 60px;
     @media (max-width: 1600px) {
         position: absolute;
         top: 0;
     }
 `
-
 
 export const Card = styled.div`
     display: flex;
@@ -62,7 +60,7 @@ export const CardWrapper = styled.div`
         justify-content: center;
         align-items: center;
     }
-    `
+`
 
 export const CardText = styled.div`
     display: flex;
@@ -78,8 +76,8 @@ export const CardImage = styled.div`
 `
 
 export const AnimatedGradientText = styled.h1`
-    color: #00C2FF;
-    background-image: linear-gradient(93.11deg, #00C2FF 15.03%, #FF75F4 83.95%);
+    color: #00c2ff;
+    background-image: linear-gradient(93.11deg, #00c2ff 15.03%, #ff75f4 83.95%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Montserrat', 'Roboto';

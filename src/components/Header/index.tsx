@@ -1,48 +1,34 @@
 import { rtonycloudLogo } from 'public/icons'
 import Image from 'next/image'
 import * as styles from './header.styles'
-import stylesGuide from '@/styles/components/components.styles'
 import { Button } from '../UIComponents/'
-import { githubIcon, linkedinIcon, heartIcon } from 'public/icons'
+import HeaderTexts from '@/utils/portfolioTexts/Header.texts'
 
-const { HeaderbuttonStyles } = stylesGuide()
+const {NavItems, MediaItems, ButtonText } = HeaderTexts()
 
-const NavItems = ['About', 'Skills', 'Projects']
-
-const MediaItems = [
-    {
-        image: (
-            <Image src={githubIcon} alt="github" width="30" className="image" />
-        ),
-        title: 'Github',
-        url: 'www.github.com/rtonycloud',
-    },
-    {
-        image: <Image src={linkedinIcon} alt="Linkedin" width="30" />,
-        title: 'LinkedIn',
-        url: 'www.linkedin.com/in/tony-rivera-full-stack-engineer',
-    },
-]
-
-const ButtonText = [
-    {
-        image: <Image src={heartIcon} alt="hello" width="20" />,
-        text: 'Download Resume',
-    },
-]
+const downloadHandler = () => {
+    const URL = 'https://storage.googleapis.com/rtonycloud/TonyRivera-web2-cv.docx'
+    if (typeof window !== 'undefined') {
+        window.location.href = URL
+    }
+}
 
 const Header: React.FC = (): JSX.Element => {
     return (
         <styles.headerWrapper>
             <styles.headerContent>
                 {NavItems.map((NavItems, index) => (
-                    <styles.navContent key={index}>
-                        {NavItems}
+                    <styles.navContent key={index} href={NavItems.url}>
+                        {NavItems.title}
                     </styles.navContent>
                 ))}
                 <styles.SecondNav>
                     {MediaItems.map((MediaItems, index) => (
-                        <styles.mediaItems key={index}>
+                        <styles.mediaItems
+                            key={index}
+                            target="_blank"
+                            href={MediaItems.url}
+                        >
                             <styles.MediaItemImage>
                                 {MediaItems.image}
                             </styles.MediaItemImage>
@@ -55,7 +41,7 @@ const Header: React.FC = (): JSX.Element => {
                         <Button
                             type="button"
                             key={index}
-                            onClick={() => console.log('click me')}
+                            onClick={() => downloadHandler()}
                         >
                             {ButtonText.image}
                             {ButtonText.text}

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styled from 'styled-components'
 
 export const headerWrapper = styled.div`
@@ -17,12 +18,14 @@ export const headerContent = styled.div`
     font-size: 2em;
 `
 
-export const navContent = styled.div`
+export const navContent = styled(Link)`
     display: flex;
     position: relative;
-    top: 1.6em;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
+    color: white;
+    top: 1.6em;
     height: 50px;
     cursor: pointer;
     &:hover {
@@ -63,10 +66,12 @@ export const MediaItemImage = styled.div`
 
 export const MediaItemTitle = styled.div``
 
-export const mediaItems = styled.div`
+export const mediaItems = styled.a`
     display: flex;
     flex-direction: row;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
     &:hover {
         background-image: linear-gradient(
             93.11deg,

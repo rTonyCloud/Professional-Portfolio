@@ -14,10 +14,6 @@ import RtonyPageTexts from '@/utils/portfolioTexts/Rtony.texts'
 const { Title, JobTitle, Experience, Projects } = RtonyPageTexts()
 // const { rtonytextStyle, RtonyExperienceStyle, RtonyYearsStyle } = stylesGuide()
 
-// const style = {
-//     background:
-//         'linear-gradient(92.61deg, rgba(0, 194, 255, 0.85) 7.28%, rgba(255, 117, 244, 0.799) 91.4%)',
-// }
 
 const RtonyBlock: React.FC = (): JSX.Element => {
     return (
