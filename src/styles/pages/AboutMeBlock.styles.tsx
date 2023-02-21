@@ -1,4 +1,3 @@
-import { devices } from '@/theme'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -13,10 +12,13 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     position: relative;
-    @media ${devices.tablet}, ${devices.mobileS}, ${devices.mobileM} {
-        display: flex;
+    height: 100%;
+    @media (max-width: 1600px) {
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
     }
 `
 
@@ -29,6 +31,10 @@ export const AboutText = styled.div`
     position: relative;
     white-space: pre-line;
     border: 1px solid white;
+    @media (max-width: 1600px) {
+        position: absolute;
+        top: 0;
+    }
 `
 
 
@@ -37,8 +43,9 @@ export const Card = styled.div`
     justify-content: flex-end;
     position: relative;
     border-radius: 6px;
-    @media ${devices.tablet}, ${devices.mobileS}, ${devices.mobileM}{
-
+    @media (max-width: 1600px) {
+        flex-direction: row;
+        justify-content: center;
     }
 `
 
@@ -48,11 +55,12 @@ export const CardWrapper = styled.div`
     position: relative;
     gap: 24px;
     top: 20rem;
-    @media ${devices.tablet}, ${devices.mobileS}, ${devices.mobileM} {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: 22rem;
+    @media (max-width: 1600px) {
+        position: absolute;
+        bottom: -50rem;
+        right: 0;
+        justify-content: center;
+        align-items: center;
     }
     `
 

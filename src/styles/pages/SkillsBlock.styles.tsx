@@ -36,6 +36,7 @@ export const Skills = styled.div`
     justify-content: center;
     align-items: center;
     height: 150px;
+    border: 1px solid blue;
     @media (min-width: 100px) {
         width: 200px;
         flex-direction: row;

@@ -1,4 +1,3 @@
-import { devices } from '@/theme'
 import { profileCircleIcon } from '../../../public/icons'
 import styled, { keyframes } from 'styled-components'
 
@@ -14,16 +13,15 @@ const hue = keyframes`
 export const Container = styled.div`
     width: 100%;
     min-width: 1250px;
-    height: 100%;
-    @media ${devices.tablet},
-        ${devices.mobileS},
-        ${devices.mobileM} {
+    height: 75vh;
+    @media (max-width: 1600px) {
         height: 120vh;
     }
 `
 
 export const HeaderWrapper = styled.div`
     display: flex;
+
 `
 
 export const FirstSectionHeader = styled.div`
@@ -32,9 +30,9 @@ export const FirstSectionHeader = styled.div`
     position: relative;
     top: -50px;
     left: 300px;
-    @media ${devices.tablet}, ${devices.mobileS} {
-        display: flex;
-        flex-direction: column;
+    @media (max-width: 1600px) {
+        top: -120px;
+
     }
 `
 
@@ -44,10 +42,8 @@ export const SecondSectionHeader = styled.div`
     position: absolute;
     top: 400px;
     left: 300px;
-    @media ${devices.tablet}, ${devices.mobileS}, {
-        display: flex;
-        flex-direction: column;
-        top: 50rem;
+    @media (max-width: 1600px) {
+        top: 45rem;
     }
 `
 
@@ -56,28 +52,18 @@ export const FirstSectionTitle = styled.div`
     align-content: center;
     position: relative;
     top: 50px;
-    @media ${devices.tablet}, ${devices.mobileS} {
-        display: flex;
-        flex-direction: column;
-    }
 `
 
 export const DescriptionWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    @media ${devices.tablet}, ${devices.mobileS}, {
-        flex-wrap: nowrap;
-        width: 100%;
-    }
 `
 
 export const YearsOfExperience = styled.div`
     display: flex;
     gap: 10px;
     position: relative;
-    @media ${devices.tablet}, ${devices.mobileS}, {
-    }
 `
 
 export const ProjectsCompleted = styled.div`
@@ -91,12 +77,8 @@ export const ProfileWrapper = styled.div`
     position: relative;
     right: 300px;
     top: -200px;
-    &.profile-wrapper {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        background-size: contain;
+    @media (max-width: 1600px) {
+        right: 350px;
     }
 `
 
@@ -156,11 +138,7 @@ export const AnimatedGradientText = styled.h1`
     text-align: center;
     text-rendering: optimizelegibility;
     -moz-osx-font-smoothing: grayscale;
-    @media ${devices.tablet},
-        ${devices.mobileS},
-        ${devices.mobileM},
-        ${devices.mobileL} {
-        position: relative;
-        top: -100px;
+    @media (max-width: 1600px) {
+        margin-top: -40px;
     }
 `
