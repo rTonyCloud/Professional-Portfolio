@@ -4,6 +4,9 @@ export const Container = styled.div`
     width: 100%;
     min-width: 1250px;
     height: 100%;
+    @media (max-width: 1600px) {
+        max-width: 100%;
+    }
 `
 
 export const Wrapper = styled.div`
@@ -14,10 +17,10 @@ export const Wrapper = styled.div`
     position: relative;
     height: 100%;
     @media (max-width: 1600px) {
-        flex-direction: column;
+        position: relative;
+        top: 5rem;
         justify-content: center;
-        align-items: center;
-        height: 100vh;
+        height: 200vh;
     }
 `
 
@@ -31,8 +34,7 @@ export const AboutText = styled.div`
     white-space: pre-line;
     margin-left: 60px;
     @media (max-width: 1600px) {
-        position: absolute;
-        top: 0;
+        position: relative;
     }
 `
 
@@ -42,8 +44,7 @@ export const Card = styled.div`
     position: relative;
     border-radius: 6px;
     @media (max-width: 1600px) {
-        flex-direction: row;
-        justify-content: center;
+       
     }
 `
 
@@ -54,11 +55,11 @@ export const CardWrapper = styled.div`
     gap: 24px;
     top: 20rem;
     @media (max-width: 1600px) {
-        position: absolute;
-        bottom: -50rem;
-        right: 0;
-        justify-content: center;
-        align-items: center;
+        position: relative;
+        border: 1px solid red;
+        top: 40rem;
+        right: 5rem;
+
     }
 `
 
@@ -88,4 +89,5 @@ export const AnimatedGradientText = styled.h1`
     text-align: left;
     text-rendering: optimizelegibility;
     -moz-osx-font-smoothing: grayscale;
+    margin: auto;
 `

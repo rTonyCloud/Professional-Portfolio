@@ -4,10 +4,11 @@ import * as styles from './header.styles'
 import { Button } from '../UIComponents/'
 import HeaderTexts from '@/utils/portfolioTexts/Header.texts'
 
-const {NavItems, MediaItems, ButtonText } = HeaderTexts()
+const { NavItems, MediaItems, ButtonText } = HeaderTexts()
 
 const downloadHandler = () => {
-    const URL = 'https://storage.googleapis.com/rtonycloud/TonyRivera-web2-cv.docx'
+    const URL =
+        'https://storage.googleapis.com/rtonycloud/TonyRivera-web2-cv.docx'
     if (typeof window !== 'undefined') {
         window.location.href = URL
     }
@@ -15,16 +16,16 @@ const downloadHandler = () => {
 
 const Header: React.FC = (): JSX.Element => {
     return (
-        <styles.headerWrapper>
-            <styles.headerContent>
+        <styles.HeaderWrapper>
+            <styles.HeaderContent>
                 {NavItems.map((NavItems, index) => (
-                    <styles.navContent key={index} href={NavItems.url}>
+                    <styles.NavContent key={index} href={NavItems.url}>
                         {NavItems.title}
-                    </styles.navContent>
+                    </styles.NavContent>
                 ))}
                 <styles.SecondNav>
                     {MediaItems.map((MediaItems, index) => (
-                        <styles.mediaItems
+                        <styles.MediaItems
                             key={index}
                             target="_blank"
                             href={MediaItems.url}
@@ -35,7 +36,7 @@ const Header: React.FC = (): JSX.Element => {
                             <styles.MediaItemTitle>
                                 {MediaItems.title}
                             </styles.MediaItemTitle>
-                        </styles.mediaItems>
+                        </styles.MediaItems>
                     ))}
                     {ButtonText.map((ButtonText, index) => (
                         <Button
@@ -48,11 +49,11 @@ const Header: React.FC = (): JSX.Element => {
                         </Button>
                     ))}
                 </styles.SecondNav>
-            </styles.headerContent>
-            <styles.logoWrapper>
+            </styles.HeaderContent>
+            <styles.LogoWrapper>
                 <Image src={rtonycloudLogo} alt="rtonycloud-logo" width="200" />
-            </styles.logoWrapper>
-        </styles.headerWrapper>
+            </styles.LogoWrapper>
+        </styles.HeaderWrapper>
     )
 }
 

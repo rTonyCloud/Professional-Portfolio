@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import styled from 'styled-components'
 
-export const headerWrapper = styled.div`
+export const HeaderWrapper = styled.div`
     width: 100%;
     min-width: 1250px;
-    height: 20vh;
+    height: 100%;
 `
 
-export const headerContent = styled.div`
+export const HeaderContent = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,7 +18,7 @@ export const headerContent = styled.div`
     font-size: 2em;
 `
 
-export const navContent = styled(Link)`
+export const NavContent = styled(Link)`
     display: flex;
     position: relative;
     flex-direction: row;
@@ -52,13 +52,13 @@ export const SecondNav = styled.div`
     left: 5em;
     gap: 10px;
     align-items: center;
-    & > div {
-        padding: 0.2em;
-        align-items: center;
-    }
 `
 
 export const MediaItemImage = styled.div`
+    display: flex;
+    position: relative;
+    top: 0.1em;
+    align-items: center;
     &image:hover {
         color: #00c2ff;
     }
@@ -66,7 +66,7 @@ export const MediaItemImage = styled.div`
 
 export const MediaItemTitle = styled.div``
 
-export const mediaItems = styled.a`
+export const MediaItems = styled.a`
     display: flex;
     flex-direction: row;
     cursor: pointer;
@@ -89,7 +89,7 @@ export const mediaItems = styled.a`
     }
 `
 
-export const logoWrapper = styled.div`
+export const LogoWrapper = styled.div`
     display: flex;
     flex-direction: row;
     margin-top: -110px;

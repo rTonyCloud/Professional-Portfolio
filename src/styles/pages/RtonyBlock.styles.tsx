@@ -1,6 +1,7 @@
 import { profileCircleIcon } from '../../../public/icons'
 import styled, { keyframes } from 'styled-components'
 
+// animation for the gradient text
 const hue = keyframes`
  from {
    -webkit-filter: hue-rotate(0deg);
@@ -9,13 +10,14 @@ const hue = keyframes`
    -webkit-filter: hue-rotate(-360deg);
  }
 `
-
+//page layout
 export const Container = styled.div`
     width: 100%;
     min-width: 1250px;
-    height: 75vh;
+    height: 100vh;
     @media (max-width: 1600px) {
-        height: 120vh;
+        height: 100%;
+        padding-top: 100px;
     }
 `
 
@@ -43,7 +45,9 @@ export const SecondSectionHeader = styled.div`
     top: 400px;
     left: 300px;
     @media (max-width: 1600px) {
-        top: 45rem;
+        top: 50rem;
+        align-items: center;
+        justify-content: center;
     }
 `
 
@@ -54,23 +58,36 @@ export const FirstSectionTitle = styled.div`
     top: 50px;
 `
 
-export const DescriptionWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-`
+
 
 export const YearsOfExperience = styled.div`
     display: flex;
     gap: 10px;
-    position: relative;
+    align-items: center;
 `
 
 export const ProjectsCompleted = styled.div`
     display: flex;
     gap: 10px;
+    align-items: center;
 `
 
+
+export const DescriptionWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media (max-width: 1600px) {
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 32em;
+        
+    }
+`
+
+// profile wrapper
 export const ProfileWrapper = styled.div`
     display: flex;
     justify-content: flex-end;
@@ -120,6 +137,7 @@ export const TypescriptIcon = styled.div`
     right: 100px;
 `
 
+// gradient text
 export const AnimatedGradientText = styled.h1`
     color: #00c2ff;
     background-image: linear-gradient(

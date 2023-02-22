@@ -5,6 +5,7 @@ export const Container = styled.div`
     min-width: 1250px;
     height: 100%;
     background-color: #161616;
+    margin:auto;
 `
 
 export const ReviewSection = styled.div`
@@ -45,4 +46,5 @@ export const AnimatedGradientText = styled.h1`
     text-align: left;
     text-rendering: optimizelegibility;
     -moz-osx-font-smoothing: grayscale;
+    margin:auto;
 `

@@ -9,11 +9,8 @@ import {
 } from 'public/icons'
 import { tonyRivera } from 'public/images'
 import RtonyPageTexts from '@/utils/portfolioTexts/Rtony.texts'
-// import stylesGuide from '@/styles/components/components.styles'
 
 const { Title, JobTitle, Experience, Projects } = RtonyPageTexts()
-// const { rtonytextStyle, RtonyExperienceStyle, RtonyYearsStyle } = stylesGuide()
-
 
 const RtonyBlock: React.FC = (): JSX.Element => {
     return (
@@ -35,7 +32,7 @@ const RtonyBlock: React.FC = (): JSX.Element => {
                         alt="profile"
                         width={582}
                         height={582}
-                        className='profile-circle'
+                        className="profile-circle"
                     />
                 </styles.ProfileCircle>
                 <styles.ProfileImage>

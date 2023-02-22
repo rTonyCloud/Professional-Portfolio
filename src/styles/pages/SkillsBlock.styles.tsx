@@ -7,6 +7,9 @@ export const Container = styled.div`
     height: 100%;
     background-color: #161616;
     position: relative;
+    @media (min-width: 1600px) {
+        
+    }
 `
 
 export const SkillsSlider = styled.div`

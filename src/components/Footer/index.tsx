@@ -6,10 +6,13 @@ import {
     footerGmailIcon,
     footerLinkedinIcon,
 } from 'public/icons'
-import { url } from 'inspector'
+import FooterText from '@/utils/portfolioTexts/Footer.texts'
+import useClickHandler from '@/hooks/clickHandler'
 
-const footerCopyRight =
-    'All rights reserved © 2023 - SOFTWARE DEVELOPER - by rTONYCLOUD'
+// eslint-disable-next-line react-hooks/rules-of-hooks
+const { clickHandler } = useClickHandler()
+
+const { footerCopyRight } = FooterText()
 
 const Footer: React.FC = (): JSX.Element => {
     return (
@@ -20,35 +23,27 @@ const Footer: React.FC = (): JSX.Element => {
                     src={footerGmailIcon}
                     title="Gmail"
                     alt="Gmail"
-                    onClick={() => {
-                        const URL = 'mailto:' + 'rtonycloud@gmail.com'
-                        if (typeof window !== 'undefined') {
-                            window.open(URL, '_blank')
-                        }
-                    }}
+                    onClick={() =>
+                        clickHandler('mailto:' + 'rtonycloud@gmail.com')
+                    }
                 />
                 <FooterCards
                     src={footerGithubIcon}
                     title="Github"
                     alt="Github"
-                    onClick={() => {
-                        const URL = 'https://www.github.com/rtonycloud'
-                        if (typeof window !== 'undefined') {
-                            window.open(URL, '_blank')
-                        }
-                    }}
+                    onClick={() =>
+                        clickHandler('https://www.github.com/rtonycloud')
+                    }
                 />
                 <FooterCards
                     src={footerLinkedinIcon}
                     title="LinkedIn"
                     alt="LinedkIn"
-                    onClick={() => {
-                        const URL =
+                    onClick={() =>
+                        clickHandler(
                             'https://www.linkedin.com/in/tony-rivera-full-stack-engineer/'
-                        if (typeof window !== 'undefined') {
-                            window.open(URL, '_blank')
-                        }
-                    }}
+                        )
+                    }
                 />
             </styles.footerContent>
             <styles.footerCopyRight>{footerCopyRight}</styles.footerCopyRight>
