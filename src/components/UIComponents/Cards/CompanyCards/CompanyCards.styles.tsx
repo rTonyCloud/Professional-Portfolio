@@ -6,7 +6,7 @@ export const Card = styled.div`
     position: relative;
     flex-direction: column;
     width: calc(50% - 20px);
-    height: calc(70% - 30px);
+    height: calc(30% - 30px);
 
 `
 export const Image = styled.div`
@@ -43,7 +43,6 @@ export const Description = styled.div`
     height: 100%;
     z-index: 1;
     top: 200px;
-    overflow: scroll;
 `
 
 export const Button = styled.div`

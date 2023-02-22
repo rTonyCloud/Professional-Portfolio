@@ -25,7 +25,7 @@ const CompaniesBlock: React.FC = (): JSX.Element => {
                         width={300}
                         height={300}
                         company=""
-                        description="Airbnb is a community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone or tablet. Whether an apartment for a night, a castle for a week, or a villa for a month, Airbnb connects people to unique travel experiences, at any price point, in more than 34,000 cities and 191 countries."
+                        description="Fast, Green, Stable, Decentralized. Qtum is a scalable Proof-of-Stake platform that allows developers to leverage the upstream benefits of Ethereum and Bitcoin."
                         onClick={() =>
                             window.open('https://www.qtum.org/', '_blank')
                         }
@@ -36,7 +36,7 @@ const CompaniesBlock: React.FC = (): JSX.Element => {
                         width={0}
                         height={0}
                         company=""
-                        description="Airbnb is a community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone or tablet. Whether an apartment for a night, a castle for a week, or a villa for a month, Airbnb connects people to unique travel experiences, at any price point, in more than 34,000 cities and 191 countries."
+                        description="The Blockchain Center is a virtual hub for individuals and enterprises to learn about and grow the blockchain sector - The creator of Zap Protocol."
                         onClick={() =>
                             window.open(
                                 'https://www.blockchaincenter.com/',
@@ -60,7 +60,7 @@ const CompaniesBlock: React.FC = (): JSX.Element => {
                         width={0}
                         height={0}
                         company="Johnson Controls / Sensormatic"
-                        description="Airbnb is a community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone or tablet. Whether an apartment for a night, a castle for a week, or a villa for a month, Airbnb connects people to unique travel experiences, at any price point, in more than 34,000 cities and 191 countries."
+                        description="Johnson Controls International is an American Irish-domiciled multinational conglomerate. The Sensormatic team produces security, RFID, Bluetooth equipment for buildings, retails, frachises. As of mid-2019, Johnson Controls employed 105,000 people in around 2,000 locations across six continents"
                         onClick={() =>
                             window.open(
                                 'https://www.johnsoncontrols.com/',
@@ -74,7 +74,7 @@ const CompaniesBlock: React.FC = (): JSX.Element => {
                         width={300}
                         height={0}
                         company=""
-                        description="Airbnb is a community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone or tablet. Whether an apartment for a night, a castle for a week, or a villa for a month, Airbnb connects people to unique travel experiences, at any price point, in more than 34,000 cities and 191 countries."
+                        description="Summit Media Pro is a dynamic marketing company that specializes in helping businesses achieve their marketing goals. As the creators of MoveButlers.com, Summit Media Pro has demonstrated their expertise in creating compelling online platforms that engage and delight audiences."
                         onClick={() =>
                             window.open(
                                 'https://www.summitmediapro.com//',
@@ -88,7 +88,7 @@ const CompaniesBlock: React.FC = (): JSX.Element => {
                         width={0}
                         height={0}
                         company="Spinner Network"
-                        description="Airbnb is a community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone or tablet. Whether an apartment for a night, a castle for a week, or a villa for a month, Airbnb connects people to unique travel experiences, at any price point, in more than 34,000 cities and 191 countries."
+                        description="Spinner Network is a forward-thinking company that is revolutionizing the way we think about freelancing. As the creators of OneGig, a cutting-edge platform that connects freelancers with high-quality projects, Spinner Network is empowering talented individuals to take control of their financial future in a decentralized environment. With a focus on transparency, fairness, and collaboration, Spinner Network is creating a community of freelancers who can work together to achieve their goals and build successful careers."
                         onClick={() =>
                             window.open(
                                 'https://www.myspinnetwork.com/',
