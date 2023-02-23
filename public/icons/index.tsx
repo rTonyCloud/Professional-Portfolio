@@ -27,8 +27,11 @@ import typescriptProfileIcon from './typescriptProfileIcon.svg';
 import ethereumIcon from './ethereumIcon.svg';
 import stars from './stars.svg';
 import blockLogo from './blockLogo.svg';
-
+import rustLogo from './rust.png';
+import pythonLogo from './pythonLogo.png';
 export {
+    rustLogo,
+    pythonLogo,
     blockchainIcon,
     bracketCodeIcon,
     closeCodeIcon,

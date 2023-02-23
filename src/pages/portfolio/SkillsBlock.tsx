@@ -23,6 +23,7 @@ const SkillsBlock: React.FC = (): JSX.Element => {
                 <styles.AnimatedGradientText id='skills'>
                     {skillsTitle}
                 </styles.AnimatedGradientText>
+               {/* conditional here to render the left arrow if the index is greater than 0 */}
                 <styles.SkillsSlider>
                     <styles.LeftArrow>
                         <Image
