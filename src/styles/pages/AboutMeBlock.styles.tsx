@@ -56,7 +56,6 @@ export const CardWrapper = styled.div`
     top: 20rem;
     @media (max-width: 1600px) {
         position: relative;
-        border: 1px solid red;
         top: 40rem;
         right: 5rem;
 

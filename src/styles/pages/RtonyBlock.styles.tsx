@@ -78,7 +78,6 @@ export const DescriptionWrapper = styled.div`
     flex-wrap: wrap;
     gap: 30px;
     @media (max-width: 1600px) {
-        border: 1px solid red;
         display: flex;
         align-items: center;
         flex-direction: row;
