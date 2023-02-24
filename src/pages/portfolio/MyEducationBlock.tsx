@@ -30,12 +30,11 @@ const MyEducationBlock: React.FC = (): JSX.Element => {
                             lineHeight: '40px',
                             top: '-40px',
                         }}
-                        imgAlt="um-university"
+                        imgAlt="um"
                         title="Full Stack Web Development"
                         company="University of Miami"
                         issueDate="Issue Date: Dec, 2021"
-                        credentialId="Credential ID: 123456789"
-                        buttonText="View Certificate"
+                        buttonText="View Certification"
                         onClick={() => console.log('View Certificate')}
                     />
                 </styles.Card>
@@ -54,7 +53,6 @@ const MyEducationBlock: React.FC = (): JSX.Element => {
                         title="Computer Science B.S"
                         company="Western Governors University"
                         issueDate="Issue Date: InProgress(2024)"
-                        credentialId="Credential ID: 123456789"
                         buttonText="View Degree"
                         onClick={() => console.log('View Certificate')}
                     />

@@ -4,7 +4,8 @@ import AboutTexts from '@/utils/portfolioTexts/About.texts'
 import { Modal, Typography } from '@/components/UIComponents'
 import { closeCodeIcon, dancingManIcon } from 'public/icons'
 import useModal from '@/components/UIComponents/Modal/modalHook'
-import VideoModal from '@/components/UIComponents/Modal/ModalCards/VideoModal'
+import VideoModal from '@/components/UIComponents/Modal/ModalCards'
+
 
 const { AboutMe, AboutMeText } = AboutTexts()
 
@@ -63,7 +64,11 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
                         onClick={toggle}
                     />
                 </styles.CardWrapper>
-                <VideoModal onClicks={isOpen} toggles={toggle} />
+                <Modal isOpen={isOpen} toggle={toggle}>
+                    <VideoModal
+                        url="https://vimeo.com/801464201"
+                    />
+                </Modal>
             </styles.Wrapper>
         </styles.Container>
     )

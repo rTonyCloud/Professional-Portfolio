@@ -10,7 +10,13 @@ import cardLogo from '../images/cardLogo.svg'
 import summitMediaLogo from '../images/summitMediaLogo.png'
 import umLogo from '../images/um.webp'
 import wguLogo from '../images/wguLogo.webp'
+import salsaCongressTab from '../images/salsaCongressTab.png'
+import sensualMovementTab from '../images/sensualMovementTab.png'
+import jciTab from '../images/jciTab.png'
 export {
+    jciTab,
+    sensualMovementTab,
+    salsaCongressTab,
     wguLogo,
     umLogo,
     blockchainCenter,

@@ -11,7 +11,7 @@ interface EduCardsProps {
     title: string
     company: string
     issueDate: string
-    credentialId: string
+    credentialId?: string
     logo?: StaticImageData
     onClick?: () => void
     buttonText: string
