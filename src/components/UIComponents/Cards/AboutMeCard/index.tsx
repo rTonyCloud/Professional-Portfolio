@@ -14,14 +14,15 @@ interface AboutMeProps {
     variantText?: Variant | undefined
     sxHeader?: React.CSSProperties | undefined
     sxBody?: React.CSSProperties | undefined
+    onClick?: () => void
 }
 
 const AboutMeCard: React.FC<AboutMeProps> = (
     props: AboutMeProps
 ): JSX.Element => {
-    const { title, link, image, width, height, alt, variantHeader, variantText, sxHeader, sxBody } = props
+    const { title, link, image, width, height, alt, variantHeader, variantText, sxHeader, sxBody, onClick } = props
     return (
-        <styles.Card>
+        <styles.Card onClick={onClick}>
             <styles.CardWrapper>
                 <styles.CardText>
                     <Typography variant={variantHeader} sx={sxHeader}>

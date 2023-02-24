@@ -1,17 +1,20 @@
 import * as styles from '@/styles/pages/AboutMeBlock.styles'
 import AboutMeCard from '@/components/UIComponents/Cards/AboutMeCard/index'
 import AboutTexts from '@/utils/portfolioTexts/About.texts'
-import { Typography } from '@/components/UIComponents'
+import { Modal, Typography } from '@/components/UIComponents'
 import { closeCodeIcon, dancingManIcon } from 'public/icons'
+import useModal from '@/components/UIComponents/Modal/modalHook'
 
 const { AboutMe, AboutMeText } = AboutTexts()
 
 const AboutMeBlock: React.FC = (): JSX.Element => {
+    const { isOpen, toggle } = useModal()
+
     return (
         <styles.Container>
             <styles.Wrapper>
                 <styles.AboutText>
-                    <styles.AnimatedGradientText id='about'>
+                    <styles.AnimatedGradientText id="about">
                         {AboutMe}
                     </styles.AnimatedGradientText>
                     <Typography variant="h6" sx={{ color: 'white' }}>
@@ -33,6 +36,13 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
                             color: '#70FF00',
                             textDecoration: 'underline',
                         }}
+                        //onpen linkedon on new tab
+                        onClick={() =>
+                            window.open(
+                                'https://www.linkedin.com/in/tony-rivera-full-stack-engineer/',
+                                '_blank'
+                            )
+                        }
                     />
 
                     <AboutMeCard
@@ -49,8 +59,12 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
                             color: '#70FF00',
                             textDecoration: 'underline',
                         }}
+                        onClick={toggle}
                     />
                 </styles.CardWrapper>
+                <Modal isOpen={isOpen} toggle={toggle}>
+                    hello world
+                </Modal>
             </styles.Wrapper>
         </styles.Container>
     )
