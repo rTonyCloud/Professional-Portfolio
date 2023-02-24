@@ -21,12 +21,40 @@ const MyProjectsBlock: React.FC = (): JSX.Element => {
                     sx={{ color: 'white' }}
                     variant="h5"
                 />
+                 <ProjectCards
+                    src={project1}
+                    title="Project 1"
+                    width={0}
+                    height={349}
+                    alt="Project-1"
+                    sx={{ color: 'white' }}
+                    variant="h5"
+                />
+                 <ProjectCards
+                    src={project1}
+                    title="Project 1"
+                    width={0}
+                    height={349}
+                    alt="Project-1"
+                    sx={{ color: 'white' }}
+                    variant="h5"
+                />
+                 <ProjectCards
+                    src={project1}
+                    title="Project 1"
+                    width={0}
+                    height={349}
+                    alt="Project-1"
+                    sx={{ color: 'white' }}
+                    variant="h5"
+                /> 
+                </styles.Container>
                 <styles.ButtonsRow>
                     <styles.BottomLeftCircles />
                     <styles.BottomMidCircles />
                     <styles.BottomRightCircles />
                 </styles.ButtonsRow>
-            </styles.Container>
+           
         </styles.Section>
     )
 }

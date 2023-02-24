@@ -9,7 +9,9 @@ import project1 from '../images/project1.svg'
 import cardLogo from '../images/cardLogo.svg'
 import summitMediaLogo from '../images/summitMediaLogo.png'
 import umLogo from '../images/um.webp'
+import wguLogo from '../images/wguLogo.webp'
 export {
+    wguLogo,
     umLogo,
     blockchainCenter,
     jciLogo,

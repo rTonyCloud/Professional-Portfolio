@@ -5,6 +5,10 @@ export const Block = styled.div`
     min-width: 1250px;
     height: 100%;
     background-color: #161616;
+    @media (max-width: 1600px) {
+
+        height: 100%;
+    }
 `
 export const BlockWrapper = styled.div`
     display: flex;

@@ -47,7 +47,7 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
                     />
 
                     <AboutMeCard
-                        title="Professinal Dancer"
+                        title="Professional Dancer"
                         link="Watch Me"
                         image={dancingManIcon}
                         alt="dancingManIcon"
@@ -63,7 +63,7 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
                         onClick={toggle}
                     />
                 </styles.CardWrapper>
-                <VideoModal onClicks={isOpen} toggles={toggle}/>
+                <VideoModal onClicks={isOpen} toggles={toggle} />
             </styles.Wrapper>
         </styles.Container>
     )

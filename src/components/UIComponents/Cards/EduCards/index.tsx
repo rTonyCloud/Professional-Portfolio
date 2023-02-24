@@ -2,19 +2,17 @@ import Image, { StaticImageData } from 'next/image'
 import * as styles from './EduCards.styles'
 import Typography, { Variant } from '../../Typography'
 
-
-
 interface EduCardsProps {
     image: StaticImageData
     width: number
     height: number
     imgAlt: string
-    logoAlt: string
+    logoAlt?: string
     title: string
     company: string
     issueDate: string
     credentialId: string
-    logo: StaticImageData
+    logo?: StaticImageData
     onClick?: () => void
     buttonText: string
     sx?: React.CSSProperties | undefined
@@ -26,7 +24,7 @@ const EduCards: React.FC<EduCardsProps> = (
 ): JSX.Element => {
     const {
         imgAlt,
-        logoAlt,
+        // logoAlt,
         image,
         height,
         width,
@@ -34,7 +32,7 @@ const EduCards: React.FC<EduCardsProps> = (
         company,
         issueDate,
         credentialId,
-        logo,
+        // logo,
         buttonText,
         onClick,
         sx,
@@ -57,13 +55,7 @@ const EduCards: React.FC<EduCardsProps> = (
                 </Typography>
                 <styles.CardBodyContent>
                     <styles.CardBodyRightWrapper>
-                        <Image
-                            src={logo}
-                            width={width}
-                            height={height}
-                            alt={logoAlt}
-                            className="image"
-                        />
+                        {/* <Image src={logo} alt={logoAlt} className="image" /> */}
                         <Typography
                             variant={variant}
                             sx={{

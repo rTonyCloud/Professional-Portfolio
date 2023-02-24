@@ -9,9 +9,10 @@ export const Section = styled.div`
 
 export const Container = styled.div`
     display: flex;
-    width: 100%;
     height: 100%;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 10px;
 `
 
 export const AnimatedGradientText = styled.p`

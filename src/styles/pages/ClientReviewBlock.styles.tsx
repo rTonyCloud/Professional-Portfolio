@@ -5,32 +5,34 @@ export const Container = styled.div`
     min-width: 1250px;
     height: 100%;
     background-color: #161616;
-    margin:auto;
+    margin: auto;
+    @media (max-width: 1600px) {
+        height: 100%;
+    }
 `
 
 export const ReviewSection = styled.div`
-    display:flex;
+    display: flex;
     justify-content: center;
     color: white;
 `
 
 export const ReviewSection1 = styled.div`
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     color: white;
 `
 
 export const ReviewSection2 = styled.div`
-    display:flex;
+    display: flex;
     justify-content: center;
     color: white;
 `
 
 export const ReviewSection3 = styled.div`
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     color: white;
-
 `
 
 export const AnimatedGradientText = styled.h1`
@@ -46,5 +48,5 @@ export const AnimatedGradientText = styled.h1`
     text-align: left;
     text-rendering: optimizelegibility;
     -moz-osx-font-smoothing: grayscale;
-    margin:auto;
+    margin: auto;
 `

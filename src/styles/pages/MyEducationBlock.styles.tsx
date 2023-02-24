@@ -14,10 +14,21 @@ export const Header = styled.div`
 `
 
 export const Container = styled.div`
-    color: white;
-    padding: 25px 30px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+`
+export const Card = styled.div`
+    display: flex;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 1600px) {
+        flex-wrap: wrap;
+        width: 100%;
+    }
 `
 
 export const AnimatedGradientText = styled.h1`
