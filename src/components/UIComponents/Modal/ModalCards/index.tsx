@@ -11,6 +11,7 @@ interface Props {
 const VideoModal: React.FC<Props> = (props: Props): JSX.Element => {
     const { url } = props
 
+
     return (
             <styles.Container>
             
@@ -22,11 +23,6 @@ const VideoModal: React.FC<Props> = (props: Props): JSX.Element => {
                     autoPlay={true}
                     muted={false}
                 />
-                <styles.VideoSelector>
-                        <Image src={salsaCongressTab} alt="salsaCongressTab" width={150} height={150} className='Osc-image'/>
-                        <Image src={sensualMovementTab} alt="salsaCongressTab" width={150} height={150} className='Sm-image'/>
-                        <Image src={jciTab} alt="salsaCongressTab" width={150} height={150} className='Jci-image'/>
-                </styles.VideoSelector>
             </styles.Container>
     )
 }
