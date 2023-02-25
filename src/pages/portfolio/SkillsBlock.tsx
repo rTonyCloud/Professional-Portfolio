@@ -1,7 +1,8 @@
 import * as styles from '@/styles/pages/SkillsBlock.styles'
-import { SkillsImages } from '@/utils/portfolioTexts/Skills.text'
+import { SkillsImages, SkillsImages2 } from '@/utils/portfolioTexts/Skills.text'
 import { rightArrowIcon } from 'public/icons'
 import Image from 'next/image'
+import React from 'react'
 
 const skillsTitle = '< Skills />'
 
@@ -17,15 +18,17 @@ const leftArrowStyles = {
 }
 
 const SkillsBlock: React.FC = (): JSX.Element => {
+    const [show, setShow] = React.useState(false)
+
     return (
-        <>
-            <styles.Container>
-                <styles.AnimatedGradientText id='skills'>
-                    {skillsTitle}
-                </styles.AnimatedGradientText>
-               {/* conditional here to render the left arrow if the index is greater than 0 */}
+        <styles.Container>
+            <styles.AnimatedGradientText id="skills">
+                {skillsTitle}
+            </styles.AnimatedGradientText>
+            {/* conditional here to render the left arrow if the index is greater than 0 */}
+            {!show ? (
                 <styles.SkillsSlider>
-                    <styles.LeftArrow>
+                    <styles.RightArrow onClick={() => setShow(true)}>
                         <Image
                             src={rightArrowIcon}
                             width="10"
@@ -33,7 +36,7 @@ const SkillsBlock: React.FC = (): JSX.Element => {
                             alt="right-arrow"
                             style={RightArrowStyles}
                         />
-                    </styles.LeftArrow>
+                    </styles.RightArrow>
                     <styles.Wrapper>
                         {SkillsImages.map((skills, index) => {
                             return (
@@ -44,12 +47,33 @@ const SkillsBlock: React.FC = (): JSX.Element => {
                         })}
                     </styles.Wrapper>
                 </styles.SkillsSlider>
-                    <styles.ButtonsRow>
-                        <styles.BottomLeftCircles />
-                        <styles.BottomRightCircles />
-                    </styles.ButtonsRow>
-            </styles.Container>
-        </>
+            ) : (
+                <styles.SkillsSlider>
+                    <styles.LeftArrow onClick={() => setShow(false)}>
+                        <Image
+                            src={rightArrowIcon}
+                            width="10"
+                            height="50"
+                            alt="left-arrow"
+                            style={leftArrowStyles}
+                        />
+                    </styles.LeftArrow>
+                    <styles.Wrapper>
+                        {SkillsImages2.map((skills, index) => {
+                            return (
+                                <styles.Skills key={index}>
+                                    {skills.image}
+                                </styles.Skills>
+                            )
+                        })}
+                    </styles.Wrapper>
+                </styles.SkillsSlider>
+            )}
+            <styles.ButtonsRow>
+                <styles.BottomLeftCircles onClick={() => setShow(false)} show={!show} />
+                <styles.BottomRightCircles onClick={() => setShow(true)}  show={show}/>
+            </styles.ButtonsRow>
+        </styles.Container>
     )
 }
 

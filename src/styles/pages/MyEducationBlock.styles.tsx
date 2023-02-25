@@ -25,9 +25,12 @@ export const Card = styled.div`
     margin: 0 10px;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 15px;
     @media (max-width: 1600px) {
         flex-wrap: wrap;
-        width: 100%;
+        margin: 15px 0px;
     }
 `
 

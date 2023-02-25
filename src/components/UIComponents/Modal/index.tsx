@@ -12,13 +12,13 @@ const Modal: React.FC<ModalProps> = (props: ModalProps): JSX.Element => {
 
     return (
         <>
-            {isOpen && (
-                        <styles.ModalOverlay onClick={toggle}>
-                            <styles.ModalContent onClick={(e) => e.stopPropagation()}>
-                                {children}
-                            </styles.ModalContent>
-                        </styles.ModalOverlay>
-            )}
+            {isOpen ? (
+                <styles.ModalOverlay onClick={toggle}>
+                    <styles.ModalContent onClick={(e) => e.stopPropagation()}>
+                        {children}
+                    </styles.ModalContent>
+                </styles.ModalOverlay>
+            ) : null}
         </>
     )
 }

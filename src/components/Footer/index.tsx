@@ -7,7 +7,7 @@ import {
     footerLinkedinIcon,
 } from 'public/icons'
 import FooterText from '@/utils/portfolioTexts/Footer.texts'
-import useClickHandler from '@/hooks/clickHandler'
+import useClickHandler from '@/hooks/useClickHandler'
 
 // eslint-disable-next-line react-hooks/rules-of-hooks
 const { clickHandler } = useClickHandler()

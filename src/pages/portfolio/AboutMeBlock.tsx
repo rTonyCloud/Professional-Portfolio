@@ -5,7 +5,7 @@ import AboutMeCard from '@/components/UIComponents/Cards/AboutMeCard/index'
 import AboutTexts from '@/utils/portfolioTexts/About.texts'
 import { Modal, Typography } from '@/components/UIComponents'
 import { closeCodeIcon, dancingManIcon } from 'public/icons'
-import useModal from '@/components/UIComponents/Modal/modalHook'
+import useModal from '@/hooks/modalHook'
 import VideoModal from '@/components/UIComponents/Modal/ModalCards'
 import { jciTab, salsaCongressTab, sensualMovementTab } from 'public/images'
 import useVideos from '../../hooks/useVideos'
@@ -72,16 +72,16 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
                         <Image
                             src={salsaCongressTab}
                             alt="salsaCongressTab"
-                            width={150}
-                            height={150}
+                            width={130}
+                            height={130}
                             className="Osc-image"
                             onClick={handleVideo}
                         />
                         <Image
                             src={sensualMovementTab}
                             alt="sensualmovementTab"
-                            width={150}
-                            height={150}
+                            width={130}
+                            height={130}
                             className="Sm-image"
                             onClick={handleVideo}
                         />

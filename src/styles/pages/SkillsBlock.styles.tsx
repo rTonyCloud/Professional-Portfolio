@@ -1,5 +1,8 @@
 import styled from 'styled-components'
-import { devices } from '../../theme'
+
+interface CircleProps {
+    show: boolean
+}
 
 export const Container = styled.div`
     width: 100%;
@@ -8,7 +11,6 @@ export const Container = styled.div`
     background-color: #161616;
     position: relative;
     @media (min-width: 1600px) {
-        
     }
 `
 
@@ -65,52 +67,38 @@ export const LeftArrow = styled.div`
     z-index: 1;
     cursor: pointer;
     border: 1px solid #fff;
-    background: rgba(0, 194, 255, 0.85);
-    &:hover {
-        background: linear-gradient(
-            92.61deg,
-            rgba(0, 194, 255, 0.85) 7.28%,
-            rgba(255, 117, 244, 0.799) 91.4%
-        );
-    }
 `
 
 export const RightArrow = styled.div`
     position: absolute;
-    top: 50%;
-    transform: translateY(0, -50%);
-    right: 32;
-    font-size: 45px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+    right: 10rem;
+    top: 18em;
     color: white;
+    background-color: white;
     z-index: 1;
     cursor: pointer;
-    &:hover {
-        background: linear-gradient(
-            92.61deg,
-            rgba(0, 194, 255, 0.85) 7.28%,
-            rgba(255, 117, 244, 0.799) 91.4%
-        );
-    }
+    border: 1px solid #fff;
 `
 
-export const BottomLeftCircles = styled.div`
+export const BottomLeftCircles = styled.div<CircleProps>`
     width: 28.3px;
     height: 28.3px;
     border-radius: 50%;
     border: 1px solid #ffffff;
     cursor: pointer;
-    background-color: #00c2ff;
-    @media ${devices.laptop}, ${devices.tablet}, ${devices.mobileL} {
-    }
+    background-color: ${(props) => (props.show ? '#00c2ff' : '#transparent')};
 `
-export const BottomRightCircles = styled.div`
+export const BottomRightCircles = styled.div<CircleProps>`
     width: 28.3px;
     height: 28.3px;
     border-radius: 50%;
     border: 1px solid #ffffff;
     cursor: pointer;
-    @media ${devices.laptop}, ${devices.tablet}, ${devices.mobileL} {
-    }
+    background-color: ${(props) => (props.show ? '#00c2ff' : '#transparent')};
 `
 
 export const ButtonsRow = styled.div`
@@ -125,6 +113,9 @@ export const ButtonsRow = styled.div`
             rgba(0, 194, 255, 0.85) 7.28%,
             rgba(255, 117, 244, 0.799) 91.4%
         );
+    }
+    ${BottomLeftCircles}:active,${BottomRightCircles}:active {
+        background-color: #00c2ff;
     }
 `
 

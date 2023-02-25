@@ -1,6 +1,6 @@
 const useClickHandler = () => {
 
-    function clickHandler(url?: string) {
+    function footerClickHandler(url?: string) {
         const URL = url
         if (typeof window !== 'undefined') {
             window.open(URL, '_blank')
@@ -12,7 +12,9 @@ const useClickHandler = () => {
         }
         return null
     }
-    return {clickHandler}
+
+
+    return {footerClickHandler}
 }
 
 export default useClickHandler
