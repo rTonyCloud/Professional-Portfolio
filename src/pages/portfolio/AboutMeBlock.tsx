@@ -1,4 +1,6 @@
 import * as styles from '@/styles/pages/AboutMeBlock.styles'
+import React from 'react'
+import Image from 'next/image'
 import AboutMeCard from '@/components/UIComponents/Cards/AboutMeCard/index'
 import AboutTexts from '@/utils/portfolioTexts/About.texts'
 import { Modal, Typography } from '@/components/UIComponents'
@@ -6,26 +8,12 @@ import { closeCodeIcon, dancingManIcon } from 'public/icons'
 import useModal from '@/components/UIComponents/Modal/modalHook'
 import VideoModal from '@/components/UIComponents/Modal/ModalCards'
 import { jciTab, salsaCongressTab, sensualMovementTab } from 'public/images'
-import Image from 'next/image'
-import React, { useState } from 'react'
-
-const { AboutMe, AboutMeText } = AboutTexts()
+import useVideos from '../../hooks/useVideos'
 
 const AboutMeBlock: React.FC = (): JSX.Element => {
-    
-    const [videoUrl, setVideoUrl] = React.useState<string>('https://vimeo.com/801463515')
+    const { AboutMe, AboutMeText } = AboutTexts()
     const { isOpen, toggle } = useModal()
-    
-    const handleVideo = (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
-        const { className } = e.currentTarget
-        if (className === 'Osc-image') {
-            setVideoUrl('https://vimeo.com/801463515')
-        } else if (className === 'Sm-image') {
-            setVideoUrl('https://vimeo.com/801464201')
-        } else if (className === 'Jci-image') {
-            setVideoUrl('https://vimeo.com/801464201')
-        }
-    }
+    const { videoUrl, handleVideo } = useVideos()
 
     return (
         <styles.Container>
@@ -61,7 +49,6 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
                             )
                         }
                     />
-
                     <AboutMeCard
                         title="Professional Dancer"
                         link="Watch Me"
@@ -89,22 +76,13 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
                             height={150}
                             className="Osc-image"
                             onClick={handleVideo}
-
                         />
                         <Image
                             src={sensualMovementTab}
-                            alt="salsaCongressTab"
+                            alt="sensualmovementTab"
                             width={150}
                             height={150}
                             className="Sm-image"
-                            onClick={handleVideo}
-                        />
-                        <Image
-                            src={jciTab}
-                            alt="salsaCongressTab"
-                            width={150}
-                            height={150}
-                            className="Jci-image"
                             onClick={handleVideo}
                         />
                     </styles.VideoSelector>
@@ -113,5 +91,4 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
         </styles.Container>
     )
 }
-
 export default AboutMeBlock

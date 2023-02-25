@@ -14,7 +14,6 @@ const VideoModal: React.FC<Props> = (props: Props): JSX.Element => {
 
     return (
             <styles.Container>
-            
                 <VimeoPlayer
                     url={url}
                     width="100%"

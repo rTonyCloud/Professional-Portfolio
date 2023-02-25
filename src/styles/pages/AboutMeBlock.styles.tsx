@@ -97,7 +97,8 @@ export const VideoSelector = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid #00c2ff;
+    box-shadow: 0px 0px 25px #00c2ff;
     margin-top: 1rem;
     border-radius: 1rem;
     width: 100%;
@@ -106,7 +107,8 @@ export const VideoSelector = styled.div`
     transition: all 1s ease-in-out;
     :hover {
         transform: scale(1.1);
-        border: 1px solid #00c2ff;
+        border: 1px solid #ffffff;
+        box-shadow: 0px 0px 25px #ffffff;
     }
     .Osc-image:active,
     .Osc.image:hover {
