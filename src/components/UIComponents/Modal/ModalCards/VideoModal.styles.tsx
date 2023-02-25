@@ -7,7 +7,7 @@ export const Container = styled.div`
     justify-content: center;
     box-shadow: 0 0 20px 0 rgb(254, 254, 254);
     transition: all 1s ease-in-out;
-    :hover, ${VideoSelector}:hover & {
-    box-shadow: 0 0 10px 0  #00c2ff !important;
+    :hover{
+    box-shadow: 0 0 20px 0  #00c2ff !important;
     }
 `
