@@ -106,7 +106,7 @@ export const VideoSelector = styled.div`
     transform: scale(.5);
     transition: all 1s ease-in-out;
     :hover {
-        transform: scale(1.1);
+        transform: scale(0.8);
         border: 1px solid #ffffff;
         box-shadow: 0px 0px 25px #ffffff;
     }
