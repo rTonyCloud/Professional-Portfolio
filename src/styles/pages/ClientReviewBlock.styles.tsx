@@ -5,10 +5,6 @@ export const Container = styled.div`
     min-width: 1250px;
     height: 100%;
     background-color: #161616;
-    margin: auto;
-    @media (max-width: 1600px) {
-        height: 100%;
-    }
 `
 
 export const ReviewSection = styled.div`

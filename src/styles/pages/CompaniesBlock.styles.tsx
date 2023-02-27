@@ -1,12 +1,11 @@
 import styled from 'styled-components'
 
-export const Block = styled.div`
+export const Section = styled.div`
     width: 100%;
     min-width: 1250px;
     height: 100%;
     background-color: #161616;
     @media (max-width: 1600px) {
-
         height: 100%;
     }
 `
@@ -41,21 +40,14 @@ export const LineContainer = styled.div`
     display: flex;
     height: 180vh;
     gap: 39.6vh;
-    right: 1rem;
-    justify-content: center;
+    right: 8rem;
     align-items: center;
     align-self: center;
     flex-direction: column;
     &:hover > div {
         border-image: linear-gradient(93.11deg, #00c2ff 15.03%, #ff75f4 83.95%)
             1;
-        border-image-slice: 1;
         border-radius: 100% !important;
-        transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1),
-            box-shadow 0.8s cubic-bezier(0.76, 0, 0.24, 1);
-        transform-origin: center center;
-        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25),
-            0 0 48px rgba(0, 0, 0, 0.35);
     }
 `
 
@@ -63,6 +55,7 @@ export const CardWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 `
 
 export const AnimatedGradientText = styled.h1`

@@ -25,7 +25,6 @@ export const Wrapper = styled.div`
     position: relative;
     flex-direction: column;
     z-index: 1;
-    
 `
 
 export const Title = styled.div`
@@ -43,6 +42,7 @@ export const Description = styled.div`
     height: 100%;
     z-index: 1;
     top: 200px;
+    overflow: scroll;
 `
 
 export const Button = styled.div`

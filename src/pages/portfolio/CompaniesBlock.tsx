@@ -13,23 +13,23 @@ const companyHeader = '<Companies/>'
 
 const CompaniesBlock: React.FC = (): JSX.Element => {
     return (
-        <styles.Block>
+        <styles.Section>
             <styles.BlockWrapper>
                 <styles.AnimatedGradientText>
                     {companyHeader}
                 </styles.AnimatedGradientText>
                 <styles.CardWrapper>
-                    <CompanyCards
-                        companyLogo={qtumLogo}
-                        alt="Qtum-Logo"
-                        width={300}
-                        height={300}
-                        company=""
-                        description="Fast, Green, Stable, Decentralized. Qtum is a scalable Proof-of-Stake platform that allows developers to leverage the upstream benefits of Ethereum and Bitcoin."
-                        onClick={() =>
-                            window.open('https://www.qtum.org/', '_blank')
-                        }
-                    />
+                        <CompanyCards
+                            companyLogo={qtumLogo}
+                            alt="Qtum-Logo"
+                            width={300}
+                            height={300}
+                            company=""
+                            description="Fast, Green, Stable, Decentralized. Qtum is a scalable Proof-of-Stake platform that allows developers to leverage the upstream benefits of Ethereum and Bitcoin."
+                            onClick={() =>
+                                window.open('https://www.qtum.org/', '_blank')
+                            }
+                        />
                     <CompanyCards
                         companyLogo={blockchainCenter}
                         alt="Blockchain-Center-logo"
@@ -98,7 +98,7 @@ const CompaniesBlock: React.FC = (): JSX.Element => {
                     />
                 </styles.CardWrapper>
             </styles.BlockWrapper>
-        </styles.Block>
+        </styles.Section>
     )
 }
 
