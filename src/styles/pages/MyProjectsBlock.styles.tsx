@@ -8,11 +8,43 @@ export const Section = styled.div`
 `
 
 export const Container = styled.div`
-    display: flex;
-    height: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 10px;
+    width: 100%;
+    cursor: pointer;
+    .slick-slide > div {
+        display: grid;
+        place-items: center;
+        width: 80%;
+        margin-top: 50px;
+        margin: auto;
+        height: 500px;
+        padding: 0px;
+    }
+    .slick-dots {
+        position: relative;
+        width: 100%;
+    }
+
+    .slick-dots li {
+        width: 28.3px;
+    }
+
+    .slick-dots li button:before {
+        position: absolute;
+        font-size: 20px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        background: linear-gradient(
+            92.61deg,
+            rgba(0, 194, 255, 0.85) 7.28%,
+            rgba(255, 117, 244, 0.85) 92.72%
+        );
+    }
+
+    .slick-dots li.slick-active button:before {
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        color: #00c2ff;
+    }
 `
 
 export const AnimatedGradientText = styled.p`

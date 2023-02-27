@@ -10,14 +10,15 @@ interface ProjectCardsProps {
     alt: string
     sx?: React.CSSProperties
     variant?: Variant
+    modal?: () => void
 }
 
 const ProjectCards: React.FC<ProjectCardsProps> = (
     props: ProjectCardsProps
 ): JSX.Element => {
-    const { src, title, width, height, alt, sx, variant } = props
+    const { src, title, width, height, alt, sx, variant, modal } = props
     return (
-        <styles.ProjectCard>
+        <styles.ProjectCard onClick={modal}>
             <styles.ProjectImage>
                 <Image
                     src={src}

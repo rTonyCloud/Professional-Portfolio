@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-interface CircleProps {
+export type CircleProps = {
     show: boolean
 }
 
@@ -55,18 +55,25 @@ export const Skills = styled.div`
 `
 
 export const LeftArrow = styled.div`
-    position: absolute;
+    position: relative;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     transform: translate(0, -50%);
     right: 10rem;
-    top: 18em;
+    align-self: center;
     color: white;
-    background-color: white;
+    background-color: #00c2ff;
     z-index: 1;
     cursor: pointer;
     border: 1px solid #fff;
+    :hover {
+        background: linear-gradient(
+            92.61deg,
+            rgba(0, 194, 255, 0.85) 7.28%,
+            rgba(255, 117, 244, 0.799) 91.4%
+        );
+    }
 `
 
 export const RightArrow = styled.div`
@@ -78,10 +85,17 @@ export const RightArrow = styled.div`
     right: 10rem;
     top: 18em;
     color: white;
-    background-color: white;
+    background-color: #00c2ff;
     z-index: 1;
     cursor: pointer;
     border: 1px solid #fff;
+    :hover {
+        background: linear-gradient(
+            92.61deg,
+            rgba(0, 194, 255, 0.85) 7.28%,
+            rgba(255, 117, 244, 0.799) 91.4%
+        );
+    }
 `
 
 export const BottomLeftCircles = styled.div<CircleProps>`
@@ -98,7 +112,7 @@ export const BottomRightCircles = styled.div<CircleProps>`
     border-radius: 50%;
     border: 1px solid #ffffff;
     cursor: pointer;
-    background-color: ${(props) => (props.show ? '#00c2ff' : '#transparent')};
+    background-color: ${(props) => (props.show ? '#00c2ff' : 'transparent')};
 `
 
 export const ButtonsRow = styled.div`

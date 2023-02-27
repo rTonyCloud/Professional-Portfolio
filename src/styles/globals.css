@@ -48,3 +48,7 @@ a {
     font-family: 'CourierPrime';
     src: url('/public/fonts/CourierPrime-Regular.ttf');
 }
+
+/* slider */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';

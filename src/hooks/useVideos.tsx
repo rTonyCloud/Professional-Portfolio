@@ -1,10 +1,13 @@
 import React from 'react'
+import useModal from './useModal'
 
 export default function useVideos() {
+    const { isOpen, toggle } = useModal()
     const [videoUrl, setVideoUrl] = React.useState<string>(
         'https://vimeo.com/801463515'
     )
     const handleVideo = (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
+        e.preventDefault()
         const { className } = e.currentTarget
         if (className === 'Osc-image') {
             setVideoUrl('https://vimeo.com/801463515')
@@ -15,6 +18,5 @@ export default function useVideos() {
         }
     }
 
-    return { videoUrl, handleVideo, }
+    return { videoUrl, handleVideo, isOpen, toggle }
 }
-

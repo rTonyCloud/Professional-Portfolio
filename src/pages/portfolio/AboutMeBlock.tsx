@@ -5,15 +5,13 @@ import AboutMeCard from '@/components/UIComponents/Cards/AboutMeCard/index'
 import AboutTexts from '@/utils/portfolioTexts/About.texts'
 import { Modal, Typography } from '@/components/UIComponents'
 import { closeCodeIcon, dancingManIcon } from 'public/icons'
-import useModal from '@/hooks/modalHook'
-import VideoModal from '@/components/UIComponents/Modal/ModalCards'
+import VideoModal from '@/components/UIComponents/Modal/ModalCards/VideoModal'
 import { jciTab, salsaCongressTab, sensualMovementTab } from 'public/images'
 import useVideos from '../../hooks/useVideos'
 
 const AboutMeBlock: React.FC = (): JSX.Element => {
     const { AboutMe, AboutMeText } = AboutTexts()
-    const { isOpen, toggle } = useModal()
-    const { videoUrl, handleVideo } = useVideos()
+    const { videoUrl, handleVideo, toggle, isOpen } = useVideos()
 
     return (
         <styles.Container>

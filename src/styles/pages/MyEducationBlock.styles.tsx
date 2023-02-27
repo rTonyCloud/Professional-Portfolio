@@ -15,22 +15,26 @@ export const Header = styled.div`
 
 export const Container = styled.div`
     display: flex;
-    justify-content: center;
-    color: white;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    color: white;
 `
 export const Card = styled.div`
     display: flex;
-    margin: 0 10px;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-wrap:wrap;
+    margin: 0 10px;
     gap: 15px;
+    flex-wrap: wrap;
     @media (max-width: 1600px) {
         flex-wrap: wrap;
         margin: 15px 0px;
+    }
+    @media (max-width: 960px) {
+        flex-wrap: wrap;
+        width: 80%;
+
     }
 `
 

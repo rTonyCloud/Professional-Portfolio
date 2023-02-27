@@ -10,7 +10,7 @@ import FooterText from '@/utils/portfolioTexts/Footer.texts'
 import useClickHandler from '@/hooks/useClickHandler'
 
 // eslint-disable-next-line react-hooks/rules-of-hooks
-const { clickHandler } = useClickHandler()
+const { footerClickHandler } = useClickHandler()
 
 const { footerCopyRight } = FooterText()
 
@@ -24,7 +24,7 @@ const Footer: React.FC = (): JSX.Element => {
                     title="Gmail"
                     alt="Gmail"
                     onClick={() =>
-                        clickHandler('mailto:' + 'rtonycloud@gmail.com')
+                        footerClickHandler('mailto:' + 'rtonycloud@gmail.com')
                     }
                 />
                 <FooterCards
@@ -32,7 +32,7 @@ const Footer: React.FC = (): JSX.Element => {
                     title="Github"
                     alt="Github"
                     onClick={() =>
-                        clickHandler('https://www.github.com/rtonycloud')
+                        footerClickHandler('https://www.github.com/rtonycloud')
                     }
                 />
                 <FooterCards
@@ -40,7 +40,7 @@ const Footer: React.FC = (): JSX.Element => {
                     title="LinkedIn"
                     alt="LinedkIn"
                     onClick={() =>
-                        clickHandler(
+                        footerClickHandler(
                             'https://www.linkedin.com/in/tony-rivera-full-stack-engineer/'
                         )
                     }
