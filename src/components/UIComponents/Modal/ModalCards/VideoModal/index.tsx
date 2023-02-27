@@ -17,6 +17,7 @@ const VideoModal: React.FC<Props> = (props: Props): JSX.Element => {
                 controls={true}
                 autoPlay={true}
                 muted={false}
+                fullscreen={false}
             />
         </styles.Container>
     )
