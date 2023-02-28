@@ -38,7 +38,7 @@ import solidityIcon from './solidityIcon.png'
 import sqlIcon from './sqlIcon.png'
 import wagmiIcon from './WagmiIcon.webp'
 import javaIcon from './javaIcon.webp'
-import userIcon from './usericon.png'
+import userIcon from './userIcon.png'
 export {
     userIcon,
     javaIcon,

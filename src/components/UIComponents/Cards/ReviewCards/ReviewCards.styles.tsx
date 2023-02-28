@@ -28,7 +28,7 @@ export const ImageWrapper = styled.div`
 export const Title = styled.div`
     display: flex;
     position: absolute;
-    left: 70px;
+    left: 100px;
     z-index: 1;
 `
 
@@ -36,7 +36,7 @@ export const Company = styled.div`
     display: flex;
     position: absolute;
     top: 20px;
-    left: 70px;
+    left: 100px;
     z-index: 1;
 `
 
