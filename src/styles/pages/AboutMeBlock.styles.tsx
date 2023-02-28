@@ -7,10 +7,6 @@ export const Container = styled.div`
     @media (max-width: 1600px) {
         max-width: 100%;
     }
-    @media (max-width: 960px) {
-        max-width: 100%;
-        height: 50vh;
-    }
 `
 
 export const Wrapper = styled.div`
