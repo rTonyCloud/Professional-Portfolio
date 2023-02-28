@@ -39,7 +39,6 @@ const AboutMeBlock: React.FC = (): JSX.Element => {
                             color: '#70FF00',
                             textDecoration: 'underline',
                         }}
-                        //onpen linkedon on new tab
                         onClick={() =>
                             window.open(
                                 'https://www.linkedin.com/in/tony-rivera-full-stack-engineer/',
