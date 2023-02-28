@@ -1,9 +1,5 @@
 import * as styles from '@/styles/pages/ClientReviewBlock.styles'
-import { Typography } from '@/components/UIComponents'
-// import {person1} from '@/assets/images'
 import Review from '@/components/UIComponents/Cards/ReviewCards'
-import { person1 } from 'public/images'
-
 import {
     Header,
     MarcoReview,

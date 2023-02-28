@@ -1,5 +1,4 @@
 import * as styles from '@/styles/pages/MyProjectsBlock.styles'
-import { project1, movebutlers } from 'public/images'
 import useProjects from '@/hooks/useProjects'
 import { Modal } from '@/components/UIComponents'
 import ProjectsModal from '@/components/UIComponents/Modal/ModalCards/ProjectsModal'

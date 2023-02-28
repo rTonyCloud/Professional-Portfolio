@@ -10,7 +10,10 @@ import {
 const clickhandler = () => {
     console.log('View Certificate')
 }
+
 const { EduCardsStyles } = stylesGuide()
+
+export const eduHeader = '<My Education />'
 
 export const EduData = [
     {

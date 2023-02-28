@@ -4,9 +4,8 @@ import { cardLogo, umLogo, wguLogo } from 'public/images'
 import Toggle from '@/components/UIComponents/Toggle'
 import React from 'react'
 import useMyEdu from '@/hooks/useMyEdu'
-import { EduData, EduData2 } from '@/utils/portfolioTexts/Education.texts'
+import { EduData, EduData2, eduHeader } from '@/utils/portfolioTexts/Education.texts'
 
-const eduHeader = '<My Education />'
 
 const MyEducationBlock: React.FC = (): JSX.Element => {
     const { active, handleToggle } = useMyEdu()

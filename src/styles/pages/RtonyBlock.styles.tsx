@@ -75,7 +75,7 @@ export const ProjectsCompleted = styled.div`
 
 export const DescriptionWrapper = styled.div`
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 30px;
     @media (max-width: 1600px) {
         display: flex;
