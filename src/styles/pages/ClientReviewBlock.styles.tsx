@@ -10,13 +10,16 @@ export const Container = styled.div`
 
 export const ReviewSection = styled.div`
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     color: white;
+    
 `
 
 export const ReviewSection1 = styled.div`
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
     color: white;
 `
 

@@ -1,35 +1,55 @@
-import blockchainIcon from './blockchainIcon.svg';
-import bracketCodeIcon from './bracketCodeIcon.svg';
-import closeCodeIcon from './closeCodeIcon.svg';
-import cssIcon from './cssIcon.svg';
-import dancingManIcon from './dancingManIcon.svg';
-import darkCircleIcon from './darkCircleIcon.svg';
-import fiveStarIcons from './fiveStarIcons.svg';
-import footerGithubIcon from './footerGithubIcon.svg';
-import footerGmailIcon from './footerGmailIcon.svg';
-import footerLinkedinIcon from './footerLinkedinIcon.svg';
-import githubIcon from './githubIcon.svg';
-import heartIcon from './heartIcon.svg';
-import html5Icon from './html5Icon.svg';
-import javascriptIcon from './javascriptIcon.svg';
-import linkedinIcon from './linkedinIcon.svg';
-import nextjsIcon from './nextjsIcon.svg';
-import nodejsIcon from './nodejsIcon.svg';
-import profileCircleIcon from './profileCircleIcon.svg';
-import reactIcon from './reactIcon.svg';
-import reduxIcon from './reduxIcon.svg';
-import rightArrowIcon from './rightArrowIcon.svg';
-import typescriptIcon from './typescriptIcon.svg';
-import rtonycloudLogo from './rtonycloudLogo.svg';
-import nodejsProfileIcon from './nodejsProfileIcon.svg';
-import reactProfileIcon from './reactProfileIcon.svg';
-import typescriptProfileIcon from './typescriptProfileIcon.svg';
-import ethereumIcon from './ethereumIcon.svg';
-import stars from './stars.svg';
-import blockLogo from './blockLogo.svg';
-import rustLogo from './rust.png';
-import pythonLogo from './pythonLogo.png';
+import blockchainIcon from './blockchainIcon.svg'
+import bracketCodeIcon from './bracketCodeIcon.svg'
+import closeCodeIcon from './closeCodeIcon.svg'
+import cssIcon from './cssIcon.svg'
+import dancingManIcon from './dancingManIcon.svg'
+import darkCircleIcon from './darkCircleIcon.svg'
+import fiveStarIcons from './fiveStarIcons.svg'
+import footerGithubIcon from './footerGithubIcon.svg'
+import footerGmailIcon from './footerGmailIcon.svg'
+import footerLinkedinIcon from './footerLinkedinIcon.svg'
+import githubIcon from './githubIcon.svg'
+import heartIcon from './heartIcon.svg'
+import html5Icon from './html5Icon.svg'
+import javascriptIcon from './javascriptIcon.svg'
+import linkedinIcon from './linkedinIcon.svg'
+import nextjsIcon from './nextjsIcon.svg'
+import nodejsIcon from './nodejsIcon.svg'
+import profileCircleIcon from './profileCircleIcon.svg'
+import reactIcon from './reactIcon.svg'
+import reduxIcon from './reduxIcon.svg'
+import rightArrowIcon from './rightArrowIcon.svg'
+import typescriptIcon from './typescriptIcon.svg'
+import rtonycloudLogo from './rtonycloudLogo.svg'
+import nodejsProfileIcon from './nodejsProfileIcon.svg'
+import reactProfileIcon from './reactProfileIcon.svg'
+import typescriptProfileIcon from './typescriptProfileIcon.svg'
+import ethereumIcon from './ethereumIcon.svg'
+import stars from './stars.svg'
+import blockLogo from './blockLogo.svg'
+import rustLogo from './rust.png'
+import pythonLogo from './pythonLogo.png'
+import gcpIcon from './gcpIcon.webp'
+import jestIcon from './jestIcon.webp'
+import awsIcon from './aws-logo.png'
+import gitIcon from './gitIcon.webp'
+import hardhatIcon from './hardhatIcon.webp'
+import solidityIcon from './solidityIcon.png'
+import sqlIcon from './sqlIcon.png'
+import wagmiIcon from './WagmiIcon.webp'
+import javaIcon from './javaIcon.webp'
+import userIcon from './userIcon.png'
 export {
+    userIcon,
+    javaIcon,
+    wagmiIcon,
+    sqlIcon,
+    solidityIcon,
+    hardhatIcon,
+    gitIcon,
+    awsIcon,
+    jestIcon,
+    gcpIcon,
     rustLogo,
     pythonLogo,
     blockchainIcon,

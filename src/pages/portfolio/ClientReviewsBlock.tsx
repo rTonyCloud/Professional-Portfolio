@@ -4,9 +4,14 @@ import { Typography } from '@/components/UIComponents'
 import Review from '@/components/UIComponents/Cards/ReviewCards'
 import { person1 } from 'public/images'
 
-const Header = '<What Clients say about Me />'
-const Description =
-    'tony is an awesome programmer, I have worked with him on multiple projects/n and he is always on time and on budget'
+import {
+    Header,
+    MarcoReview,
+    MiguelReview,
+    RichReview,
+    EricReview,
+} from '@/utils/portfolioTexts/Reviews.texts'
+import { userIcon } from 'public/icons'
 
 const ClientReviewBlock: React.FC = (): JSX.Element => {
     return (
@@ -14,22 +19,21 @@ const ClientReviewBlock: React.FC = (): JSX.Element => {
             <styles.AnimatedGradientText>{Header}</styles.AnimatedGradientText>
             <styles.ReviewSection>
                 <Review
-                    image={person1}
-                    name="Tony Rivera"
-                    company="CEO of Riveras"
-                    description={Description}
+                    image={userIcon}
+                    name="Marco Calo"
+                    company="CEO - Spinner Network"
+                    description={MarcoReview}
                     width={0}
                     height={0}
                     alt={'person1'}
                 />
             </styles.ReviewSection>
-            <br />
             <styles.ReviewSection1>
                 <Review
-                    image={person1}
-                    name="Tony Rivera"
-                    company="CEO of Riveras"
-                    description={Description}
+                    image={userIcon}
+                    name="Miguel Palencia"
+                    company="COO - Qtum"
+                    description={MiguelReview}
                     width={0}
                     height={0}
                     alt={'person1'}
@@ -37,10 +41,10 @@ const ClientReviewBlock: React.FC = (): JSX.Element => {
             </styles.ReviewSection1>
             <styles.ReviewSection2>
                 <Review
-                    image={person1}
-                    name="Tony Rivera"
-                    company="CEO of Riveras"
-                    description={Description}
+                    image={userIcon}
+                    name="Rich Falcone"
+                    company="CEO - Summit Media"
+                    description={RichReview}
                     width={0}
                     height={0}
                     alt={'person1'}
@@ -48,10 +52,10 @@ const ClientReviewBlock: React.FC = (): JSX.Element => {
             </styles.ReviewSection2>
             <styles.ReviewSection3>
                 <Review
-                    image={person1}
-                    name="Tony Rivera"
-                    company="CEO of Riveras"
-                    description={Description}
+                    image={userIcon}
+                    name="Eric Manganaro"
+                    company="CTO - Blockchain Center"
+                    description={EricReview}
                     width={0}
                     height={0}
                     alt={'person1'}

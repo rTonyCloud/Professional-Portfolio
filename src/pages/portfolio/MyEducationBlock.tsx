@@ -3,15 +3,13 @@ import * as styles from '@/styles/pages/MyEducationBlock.styles'
 import { cardLogo, umLogo, wguLogo } from 'public/images'
 import Toggle from '@/components/UIComponents/Toggle'
 import React from 'react'
+import useMyEdu from '@/hooks/useMyEdu'
+import { EduData, EduData2 } from '@/utils/portfolioTexts/Education.texts'
+
 const eduHeader = '<My Education />'
 
 const MyEducationBlock: React.FC = (): JSX.Element => {
-    const [active, setActive] = React.useState('Education')
-
-    const handleToggle = (labels: string) => {
-        setActive(labels)
-    }
-
+    const { active, handleToggle } = useMyEdu()
     return (
         <styles.Section>
             <styles.Header>
@@ -24,174 +22,47 @@ const MyEducationBlock: React.FC = (): JSX.Element => {
                     onChange={(labels) => handleToggle(labels)}
                 />
             </styles.Header>
-            <styles.Container>
-                {active == 'Education' ? (
-                    <>
-                        <styles.Card>
-                            <EduCards
-                                image={umLogo}
-                                width={0}
-                                height={0}
-                                sx={{
-                                    fontSize: '36px',
-                                    position: 'relative',
-                                    lineHeight: '40px',
-                                    top: '-40px',
-                                }}
-                                imgAlt="um"
-                                title="Full Stack Web Development"
-                                company="University of Miami"
-                                issueDate="Issue Date: Dec, 2021"
-                                buttonText="View Certification"
-                                onClick={() => console.log('View Certificate')}
-                            />
-                        </styles.Card>
-                        <styles.Card>
-                            <EduCards
-                                image={wguLogo}
-                                width={0}
-                                height={0}
-                                sx={{
-                                    fontSize: '36px',
-                                    position: 'relative',
-                                    lineHeight: '40px',
-                                    top: '-40px',
-                                }}
-                                imgAlt="wgu"
-                                title="Computer Science B.S"
-                                company="Western Governors University"
-                                issueDate="Issue Date: InProgress(2024)"
-                                buttonText="View Degree"
-                                onClick={() => console.log('View Certificate')}
-                            />
-                        </styles.Card>
-                    </>
-                ) : (
+            {active == 'Education' ? (
+                <styles.Container>
                     <styles.Card>
-                        <EduCards
-                            image={cardLogo}
-                            width={0}
-                            height={0}
-                            sx={{
-                                fontSize: '36px',
-                                position: 'relative',
-                                lineHeight: '40px',
-                                top: '-40px',
-                            }}
-                            imgAlt="wgu"
-                            title="Computer Science B.S"
-                            company="Western Governors University"
-                            issueDate="Issue Date: InProgress(2024)"
-                            buttonText="View Degree"
-                            onClick={() => console.log('View Certificate')}
-                        />
-                        <EduCards
-                            image={cardLogo}
-                            width={0}
-                            height={0}
-                            sx={{
-                                fontSize: '36px',
-                                position: 'relative',
-                                lineHeight: '40px',
-                                top: '-40px',
-                            }}
-                            imgAlt="wgu"
-                            title="Computer Science B.S"
-                            company="Western Governors University"
-                            issueDate="Issue Date: InProgress(2024)"
-                            buttonText="View Degree"
-                            onClick={() => console.log('View Certificate')}
-                        />
-                        <EduCards
-                            image={cardLogo}
-                            width={0}
-                            height={0}
-                            sx={{
-                                fontSize: '36px',
-                                position: 'relative',
-                                lineHeight: '40px',
-                                top: '-40px',
-                            }}
-                            imgAlt="wgu"
-                            title="Computer Science B.S"
-                            company="Western Governors University"
-                            issueDate="Issue Date: InProgress(2024)"
-                            buttonText="View Degree"
-                            onClick={() => console.log('View Certificate')}
-                        />
-                        <EduCards
-                            image={cardLogo}
-                            width={0}
-                            height={0}
-                            sx={{
-                                fontSize: '36px',
-                                position: 'relative',
-                                lineHeight: '40px',
-                                top: '-40px',
-                            }}
-                            imgAlt="wgu"
-                            title="Computer Science B.S"
-                            company="Western Governors University"
-                            issueDate="Issue Date: InProgress(2024)"
-                            buttonText="View Degree"
-                            onClick={() => console.log('View Certificate')}
-                        />
-                        <EduCards
-                            image={cardLogo}
-                            width={0}
-                            height={0}
-                            sx={{
-                                fontSize: '36px',
-                                position: 'relative',
-                                lineHeight: '40px',
-                                top: '-40px',
-                            }}
-                            imgAlt="wgu"
-                            title="Computer Science B.S"
-                            company="Western Governors University"
-                            issueDate="Issue Date: InProgress(2024)"
-                            buttonText="View Degree"
-                            onClick={() => console.log('View Certificate')}
-                        />
-                        <EduCards
-                            image={cardLogo}
-                            width={0}
-                            height={0}
-                            sx={{
-                                fontSize: '36px',
-                                position: 'relative',
-                                lineHeight: '40px',
-                                top: '-40px',
-                            }}
-                            imgAlt="wgu"
-                            title="Computer Science B.S"
-                            company="Western Governors University"
-                            issueDate="Issue Date: InProgress(2024)"
-                            buttonText="View Degree"
-                            onClick={() => console.log('View Certificate')}
-                        />
-                        <EduCards
-                            image={cardLogo}
-                            width={0}
-                            height={0}
-                            sx={{
-                                fontSize: '36px',
-                                position: 'relative',
-                                lineHeight: '40px',
-                                top: '-40px',
-                            }}
-                            imgAlt="wgu"
-                            title="Computer Science B.S"
-                            company="Western Governors University"
-                            issueDate="Issue Date: InProgress(2024)"
-                            buttonText="View Degree"
-                            onClick={() => console.log('View Certificate')}
-                        />
+                        {EduData.map((edu) => (
+                            <EduCards
+                                key={edu.id}
+                                image={edu.image}
+                                width={edu.width}
+                                height={edu.height}
+                                sx={edu.sx}
+                                imgAlt={edu.imgAlt}
+                                title={edu.title}
+                                company={edu.company}
+                                issueDate={edu.issueDate}
+                                buttonText={edu.buttonText}
+                                onClick={edu.onClick}
+                            />
+                        ))}
                     </styles.Card>
-                    
-                    
-                )}
-            </styles.Container>
+                </styles.Container>
+            ) : (
+                <styles.Container>
+                    <styles.Card>
+                    {EduData2.map((edu) => (
+                            <EduCards
+                                key={edu.id}
+                                image={edu.image}
+                                width={edu.width}
+                                height={edu.height}
+                                sx={edu.sx}
+                                imgAlt={edu.imgAlt}
+                                title={edu.title}
+                                company={edu.company}
+                                issueDate={edu.issueDate}
+                                buttonText={edu.buttonText}
+                                onClick={edu.onClick}
+                            />
+                        ))}
+                    </styles.Card>
+                </styles.Container>
+            )}
         </styles.Section>
     )
 }

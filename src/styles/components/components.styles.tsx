@@ -1,8 +1,7 @@
-
+import { CSSProperties } from 'react';
 
 const stylesGuide = () => {
-
-    const edubodyStyle = {
+    const edubodyStyle:CSSProperties = {
         position: 'absolute',
         bottom: '120px',
         left: '55px',
@@ -11,15 +10,14 @@ const stylesGuide = () => {
         fontWeight: '400',
     }
 
-    const rtonyTextStyle = {
+    const rtonyTextStyle:CSSProperties = {
         fontFamily: 'Montserrat',
         fontStyle: 'normal',
         fontWeight: '700',
         fontSize: '39px',
-
     }
 
-    const RtonyYearsStyle = {
+    const RtonyYearsStyle:CSSProperties= {
         fontFamily: 'Roboto',
         fontStyle: 'normal',
         fontWeight: '400',
@@ -27,24 +25,35 @@ const stylesGuide = () => {
         textTransform: 'uppercase',
     }
 
-    const RtonyExperienceStyle = {
+    const RtonyExperienceStyle:CSSProperties = {
         fontFamily: 'Roboto',
         fontStyle: 'normal',
         fontWeight: '400',
         fontSize: '27px',
         textTransform: 'uppercase',
-
-
     }
 
-    const HeaderbuttonStyles = {
-            display: 'flex',
-            padding: '1em',
-            background:'#00c2ff',
-            border: '1px solid #ffffff',
-            }
+    const HeaderbuttonStyles:CSSProperties = {
+        display: 'flex',
+        padding: '1em',
+        background: '#00c2ff',
+        border: '1px solid #ffffff',
+    }
 
-    return { HeaderbuttonStyles, rtonyTextStyle, RtonyExperienceStyle, RtonyYearsStyle}
+    const EduCardsStyles:CSSProperties = {
+        fontSize: '36px',
+        position: 'relative',
+        lineHeight: '40px',
+        top: '-40px',
+    }
+
+    return {
+        HeaderbuttonStyles,
+        rtonyTextStyle,
+        RtonyExperienceStyle,
+        RtonyYearsStyle,
+        EduCardsStyles,
+    }
 }
 
 export default stylesGuide

@@ -3,7 +3,7 @@ import * as styles from './ProjectCards.styles'
 import Typography, { Variant } from '../../Typography'
 
 interface ProjectCardsProps {
-    src: StaticImageData | string
+    image: StaticImageData | string
     title: string
     width: number
     height: number
@@ -16,12 +16,12 @@ interface ProjectCardsProps {
 const ProjectCards: React.FC<ProjectCardsProps> = (
     props: ProjectCardsProps
 ): JSX.Element => {
-    const { src, title, width, height, alt, sx, variant, modal } = props
+    const { image, title, width, height, alt, sx, variant, modal } = props
     return (
         <styles.ProjectCard onClick={modal}>
             <styles.ProjectImage>
                 <Image
-                    src={src}
+                    src={image}
                     alt={alt}
                     width={width}
                     height={height}
